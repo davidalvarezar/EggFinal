@@ -1,6 +1,6 @@
 package com.Eggfinal.entidades;
 import javax.persistence.Entity;
-import org.springframework.data.annotation.Id;
+import javax.persistence.Id;
 
 import lombok.Data;
 
