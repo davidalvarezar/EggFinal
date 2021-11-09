@@ -45,6 +45,7 @@ body{
 	height:70px;
 	align-items: center;
 	font-weight: 700;
+    text-transform: capitalize;
 }
 
 .nav_footer{
