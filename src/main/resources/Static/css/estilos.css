@@ -27,7 +27,7 @@ body{
 /* Aquí la gradiente me la esta tomando al 100% no como gradiente.*/
 .hero{
 	height: 50vh;
-	background-image:linear-gradient(to bottom, #333333 60%, #333333 0%),url(/img/Header.jpg);
+	background-image:/*linear-gradient(to bottom, #333333 60%, #333333 0%)*/url(/img/Header.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment:fixed;
@@ -45,7 +45,8 @@ body{
 	height:70px;
 	align-items: center;
 	font-weight: 700;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .nav_footer{
@@ -60,6 +61,7 @@ body{
 	padding: 10px 15px;
 	font-weight: inherit;
 }
+
 
 .nav_item--cta{
 	background-color: var(--color-secondary);
