@@ -15,6 +15,7 @@ public class Usuario {
 	
 	@Id
 	private String documento;
+	private String clave;
 	private String nombre;
 	private String apellido;
 	private String email;
