@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
+
+:root{
+	--color-primary:#372FFF;
+	--color-secondary:#FA4B6A;
+	--button-padding:16px 24px;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+	width:90%;
+	margin: 0 auto;
+	overflow:hidden;
+	padding:80px 0;
+	max-width:1200px;
+}
+
+.subtitle{
+	color:#333333;
+	font-size: 48px;
+	margin-bottom:35px;
+}
+
+/* Aquí la gradiente me la esta tomando al 100% no como gradiente.*/
+.hero{
+	height: 50vh;
+	background-image:linear-gradient(to bottom, #333333 60%, #333333 0%),url(/img/Header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	background-position: center;
+	position:relative;
+}
+
+.hero .container{
+	padding:0;
+}
+
+.nav{
+	display:flex;
+	justify-content: flex-end;
+	height:70px;
+	align-items: center;
+	font-weight: 700;
+    text-transform: capitalize;
+}
+
+.nav_footer{
+	font-weight: 400;
+	justify-content: flex-start;
+}
+
+.nav_item{
+	color:#ffffff;
+	text-decoration: none;
+	margin-left: 20px;
+	padding: 10px 15px;
+	font-weight: inherit;
+}
+
+.nav_item--cta{
+	background-color: var(--color-secondary);
+	border: 1px solid #FA4B6A;
+	border-radius: 20px;
+}
+
+.nav_item--footer{
+	padding:10px;
+}
+
+.hero_container{
+	display:flex;
+	height:calc(50vh -70px);
+	align-items: center;
+	color:#ffffff;	
+}
+
+/* Quedé minuto 39:44 del video pero no hay que hacer lo del wave*/
+

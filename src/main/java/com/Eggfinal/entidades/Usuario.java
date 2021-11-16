@@ -1,4 +1,9 @@
 package com.Eggfinal.entidades;
+
+
+
+
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -10,6 +15,7 @@ public class Usuario {
 	
 	@Id
 	private String documento;
+	private String clave;
 	private String nombre;
 	private String apellido;
 	private String email;
