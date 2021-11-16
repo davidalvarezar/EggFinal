@@ -27,7 +27,7 @@ body{
 /* Aquí la gradiente me la esta tomando al 100% no como gradiente.*/
 .hero{
 	height: 50vh;
-	background-image:/*linear-gradient(to bottom, #333333 60%, #333333 0%)*/url(/bin/src/main/resources/Static/img/greeting-of-workers-2021-09-24-03-32-06-utc.jpg);
+	background-image:linear-gradient(to bottom, #333333 60%, #333333 0%),url(/img/Header.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment:fixed;
@@ -45,8 +45,7 @@ body{
 	height:70px;
 	align-items: center;
 	font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    text-transform: capitalize;
 }
 
 .nav_footer{
@@ -62,16 +61,10 @@ body{
 	font-weight: inherit;
 }
 
-
 .nav_item--cta{
 	background-color: var(--color-secondary);
 	border: 1px solid #FA4B6A;
 	border-radius: 20px;
-}
-
-.nav_item--clicked{
-	color: #372FFF;
-	font-weight: 900;
 }
 
 .nav_item--footer{
@@ -84,6 +77,96 @@ body{
 	align-items: center;
 	color:#ffffff;	
 }
+img.trabajo{
+	width: 250px; height: 250px;
+}
 
+a.category_cta{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+div.creaperfil{
+	
+	float: left;
+	margin-left:10px;
+	width: 200px;
+	height: 100px;
+	padding-top: 50px;
+	padding-left: 80px;
+	padding-right: 50px;
+
+}
+div.cargatarifa{
+	width: 200px;
+	height: 100px;
+	padding-top: 50px;
+	padding-left: 140px;
+	padding-right: 50px;
+	float: left;
+	margin-left:10px;
+	
+}
+div.aceptatrabaja{
+	width: 200px; /*Revisar todo esto para dar forma a esos cuadros*/
+	height: 100px;/*Revisar todo esto para dar forma a esos cuadros*/
+	padding-top: 50px; /*Revisar todo esto para dar forma a esos cuadros*/
+	padding-left: 150px; /*Revisar todo esto para dar forma a esos cuadros*/
+	padding-right: 50px; /*Revisar todo esto para dar forma a esos cuadros*/
+	float: left;
+	margin-right:10px;
+
+}
+
+h4.como{
+	text-align: center;
+}
+img.imagencomo{
+	display:block;
+    margin:auto;
+}
+p.pasos{
+	text-align: center;
+	margin-right: auto;
+}
+
+h3.publish_text{
+	text-align: center;
+	padding-top: 50px;
+}
+
+div.testimony1{
+	float: left;
+	margin-left:-80px;
+	width: 300px;
+	height: 100px;
+	padding-top: 50px;
+	padding-left: 80px;
+	padding-right: 50px;
+	text-align: center;
+}
+
+div.testimony2{
+	width: 300px;
+	height: 100px;
+	padding-top: 50px;
+	padding-left: 100px;
+	padding-right: 20px;
+	float: left;
+	margin-left:10px;
+	text-align: center;
+}
+
+div.testimony3{
+	width: 300px; /*Revisar todo esto para dar forma a esos cuadros*/
+	height: 100px;/*Revisar todo esto para dar forma a esos cuadros*/
+	padding-top: 50px; /*Revisar todo esto para dar forma a esos cuadros*/
+	padding-left: 50px; /*Revisar todo esto para dar forma a esos cuadros*/
+	padding-right: 50px; /*Revisar todo esto para dar forma a esos cuadros*/
+	float: left;
+	margin-right:0px;
+	text-align: center;
+}
 /* Quedé minuto 39:44 del video pero no hay que hacer lo del wave*/
-
