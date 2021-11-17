@@ -10,8 +10,9 @@ public class CategoriaController {
 
 @GetMapping("/categoriass")
 public String categoria() {
-	return"/categories.html";
-	
+
+	return"Categories.html";
 }
 	
 }
+
