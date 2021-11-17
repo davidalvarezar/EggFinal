@@ -11,6 +11,7 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.Eggfinal.entidades.Usuario;
@@ -33,7 +34,8 @@ public class UsuarioServicio implements UserDetailsService {
 		Usuario usuario=new Usuario();
 		
 		usuario.setDocumento(documento);
-		usuario.setClave(clave);
+		String encriptada = new BCryptPasswordEncoder().encode(clave);
+		usuario.setClave(encriptada);
 		usuario.setNombre(nombre);
 		usuario.setApellido(apellido);
 		usuario.setEmail(email);
@@ -49,8 +51,9 @@ public class UsuarioServicio implements UserDetailsService {
 		Optional<Usuario> respuesta=usuarioRepositorio.findById(documento);
 		if (respuesta.isPresent()) {
 			Usuario usuario=respuesta.get();
-
-			usuario.setClave(clave);
+			
+			String encriptada = new BCryptPasswordEncoder().encode(clave);
+			usuario.setClave(encriptada);
 			usuario.setNombre(nombre);
 			usuario.setApellido(apellido);
 			usuario.setTelefono(telefono);
