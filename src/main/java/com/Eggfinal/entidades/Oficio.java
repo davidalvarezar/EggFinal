@@ -6,7 +6,7 @@ import javax.persistence.ManyToOne;
 
 import lombok.Data;
 
-@Data
+
 @Entity
 public class Oficio {
 	
@@ -15,5 +15,23 @@ public class Oficio {
 
 	@ManyToOne
 	private Usuario usuario;
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+	
+	
 	
 }
