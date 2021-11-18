@@ -24,7 +24,6 @@ body{
 	margin-bottom:35px;
 }
 
-/* Aquí la gradiente me la esta tomando al 100% no como gradiente.*/
 .hero{
 	height: 50vh;
 	background-image:url(/img/Header.jpg);
@@ -54,7 +53,7 @@ body{
 	height:70px;
 	align-items: center;
 	font-weight: 700;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .nav_footer{
@@ -71,9 +70,8 @@ body{
 }
 
 .nav_item--logo{
-	justify-content: flex-start;
+	text-align:right;
 	height:70px;
-	display:flex;
 }
 
 .nav_item--clicked{
@@ -188,4 +186,38 @@ div.testimony3{
 	margin-right:0px;
 	text-align: center;
 }
-/* Quedé minuto 39:44 del video pero no hay que hacer lo del wave*/
+
+.container-menu_categorias{
+	display:flex;
+	justify-content: flex-start;
+	width:1200px;
+	height: 200px;
+	text-align: center;
+	background-color: #ffffff;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+div.item-menu-cat{
+	float: left;
+	padding-left:50px;
+	width: 100px;
+	height: auto;
+	text-align: center;
+}
+
+a.item-menu-cat{
+	text-decoration: none;
+	text-align: center;
+	color:#333333;
+	font-size: 18px;
+	margin-bottom:35px;
+}
+
+h4.profesion{
+	text-decoration: none;
+	text-decoration: none;
+	text-align: center;
+	color:#333333;
+	font-size: 18px;
+	margin-bottom:35px;
+}
