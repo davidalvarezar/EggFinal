@@ -71,7 +71,9 @@ body{
 }
 
 .nav_item--logo{
-	text-align: left;
+	justify-content: flex-start;
+	height:70px;
+	display:flex;
 }
 
 .nav_item--clicked{
