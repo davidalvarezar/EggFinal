@@ -41,8 +41,14 @@ body{
 	background-attachment:fixed;
 	background-position: center;
 	position:relative;
+	height:calc(50vh -20px);
+	align-items: center;
+	color:#ffffff;
 }
 
+.hero_cat .container{
+	padding:0;
+}
 .hero .container{
 	padding:0;
 }
@@ -69,9 +75,10 @@ body{
 	font-weight: inherit;
 }
 
-.nav_item--logo{
-	text-align:right;
-	height:70px;
+.logo{
+	align-items:right;
+	height:30px;
+	text-align: right;
 }
 
 .nav_item--clicked{
@@ -88,12 +95,14 @@ body{
 	padding:10px;
 }
 
+	
 .hero_container{
 	display:flex;
 	height:calc(50vh -70px);
 	align-items: center;
 	color:#ffffff;	
 }
+
 img.trabajo{
 	width: 250px; height: 250px;
 }
@@ -102,11 +111,9 @@ a.category_cta{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-
 }
 
 div.creaperfil{
-	
 	float: left;
 	margin-left:10px;
 	width: 200px;
@@ -114,8 +121,8 @@ div.creaperfil{
 	padding-top: 50px;
 	padding-left: 80px;
 	padding-right: 50px;
-
 }
+
 div.cargatarifa{
 	width: 200px;
 	height: 100px;
@@ -188,21 +195,24 @@ div.testimony3{
 }
 
 .container-menu_categorias{
-	display:flex;
-	justify-content: flex-start;
-	width:1200px;
+	margin:80px 280px;
+	align-items: center;
+	width: 880px;
 	height: 200px;
-	text-align: center;
-	background-color: #ffffff;
-	border-radius: 20px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+	background-color:#ffffff;
+	border-radius:20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
 
 div.item-menu-cat{
 	float: left;
-	padding-left:50px;
+	padding:30px 60px 0;
 	width: 100px;
 	height: auto;
 	text-align: center;
+	
+	
+	
 }
 
 a.item-menu-cat{
@@ -210,6 +220,7 @@ a.item-menu-cat{
 	text-align: center;
 	color:#333333;
 	font-size: 18px;
+	line-height: 12px;
 	margin-bottom:35px;
 }
 
@@ -219,5 +230,6 @@ h4.profesion{
 	text-align: center;
 	color:#333333;
 	font-size: 18px;
-	margin-bottom:35px;
+	line-height: 12px;
+	
 }
