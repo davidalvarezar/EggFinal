@@ -11,7 +11,7 @@ public class RegistroController {
 	@GetMapping("/registrate")
 	public String registrousuario(){
 		
-		return "nombre del html";
+		return "Registro.html";
 	}
 
 }

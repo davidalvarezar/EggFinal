@@ -11,7 +11,7 @@ public class IniciarSesionController {
 @GetMapping("/iniciar_sesion")
 public String iniciodesesion() {
 	
-	return/*return"nombre y ruta del html";*/
+	return "Login.html";
 }
 
 }
