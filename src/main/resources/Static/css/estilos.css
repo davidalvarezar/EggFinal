@@ -33,22 +33,7 @@ body{
 	background-position: center;
 	position:relative;
 }
-.hero_cat{
-	height: 50vh;
-	background-image:url(/img/HeroCat.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment:fixed;
-	background-position: center;
-	position:relative;
-	height:calc(50vh -20px);
-	align-items: center;
-	color:#ffffff;
-}
 
-.hero_cat .container{
-	padding:0;
-}
 .hero .container{
 	padding:0;
 }
@@ -75,15 +60,6 @@ body{
 	font-weight: inherit;
 }
 
-.logo{
-	align-items:right;
-	height:30px;
-	text-align: right;
-}
-
-.nav_item--clicked{
-	color: var(--color-primary);	
-}
 
 .nav_item--cta{
 	background-color: var(--color-secondary);
@@ -194,14 +170,43 @@ div.testimony3{
 	text-align: center;
 }
 
-.container-menu_categorias{
-	margin:80px 280px;
+/*Esto fue agregado para pag Category--Front*/
+
+.hero_cat{
+	height: 50vh;
+	background-image:url(/img/HeroCat.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	background-position: center;
+	position:relative;
+	height:calc(50vh -20px);
 	align-items: center;
-	width: 880px;
+	color:#ffffff;
+}
+
+.hero_cat .container{
+	padding:0;
+}
+
+.logo{
+	align-items:right;
+	height:30px;
+	text-align: right;
+}
+
+.nav_item--clicked{
+	color: var(--color-primary);	
+}
+
+.container-menu_categorias{
+	align-items: center;
+	width:60%;
+	margin: 80px auto;
 	height: 200px;
 	background-color:#ffffff;
 	border-radius:20px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 	}
 
 div.item-menu-cat{
@@ -210,8 +215,6 @@ div.item-menu-cat{
 	width: 100px;
 	height: auto;
 	text-align: center;
-	
-	
 	
 }
 
@@ -226,10 +229,24 @@ a.item-menu-cat{
 
 h4.profesion{
 	text-decoration: none;
-	text-decoration: none;
 	text-align: center;
 	color:#333333;
 	font-size: 18px;
 	line-height: 12px;
 	
+}
+
+.container-carrusel{
+	width:60%;
+	margin: 80px auto;
+	display:flex;
+	align-items: center;
+}
+
+.subtitle-carrusel{
+	
+	text-decoration: none;
+	text-align: left;
+	color:#333333;
+	font-size: 32px;	
 }
