@@ -174,7 +174,8 @@ div.testimony3{
 
 .hero_cat{
 	height: 50vh;
-	background-image:url(/img/HeroCat.jpg);
+	background: rgb(0,0,0);
+	background-image:linear-gradient(355deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.31974796754639356) 100%),url(/img/HeroCat.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment:fixed;
@@ -201,7 +202,7 @@ div.testimony3{
 
 .container-menu_categorias{
 	align-items: center;
-	width:60%;
+	width:50%;
 	margin: 80px auto;
 	height: 200px;
 	background-color:#ffffff;
@@ -249,4 +250,87 @@ h4.profesion{
 	text-align: left;
 	color:#333333;
 	font-size: 32px;	
+}
+
+.empleados-container{
+	background:transparent;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width:60%;
+	height:92vh;
+}
+
+.empleados-wrapper{
+	width:450px;
+	height:500px;
+	background:transparent;
+	margin:auto;
+	position:relative;
+	overflow:hidden;
+	border-radius: 10px;
+	transform:scale(0.93);
+	transition: box-shadow 0.5s, transform 0.5s;
+	z-index: 1000;
+}
+
+.empleados-wrapper:hover{
+	transform:scale(1);
+	box-shadow: 5px 20px 30px (0,0,0,0.2);
+} 
+
+.empleados-container .empleados-wrapper{
+	width:60%;
+	height:60%;
+
+}
+
+ .empleados-container .empleados-wrapper .top{
+	width:100%;
+	height:80%;
+	background-size: 100%;
+}
+
+.empleados-container .empleados-wrapper .bottom{
+	width:100%;
+	height:20%;
+	transition: transform 0.5s;
+}
+
+.empleados-container .empleados-wrapper .bottom .left{
+	width:100%;
+	height:100%;
+	background:#ffffff;
+	position:relative;
+	float:left;
+}
+
+.empleados-container .empleados-wrapper  .bottom .left .details{
+	padding-left:20px;
+	float:left;
+	width:calc(70%-40px);
+	
+}
+
+.empleados-container .empleados-wrapper  .bottom .left .details .txt_empleados{
+	font-size:21px;
+}
+
+.empleados-container .empleados-wrapper .bottom .left .contact{
+	float:right;
+	height:100%;
+	background:#f1f1f1;
+	transition:background 0.5s;
+	border-left: solid thin rgba(51,51,51,0.1);
+}
+
+.empleados-container .empleados-wrapper .bottom .left .contact i{
+	font-size: 24px;
+	padding:30px;
+	color: var(--color-primary);
+	transition:transform 0.5s;
+}
+
+.empleados-container .empleados-wrapper .bottom .left .contact:hover i{
+	transform:rotate(360deg);
 }
