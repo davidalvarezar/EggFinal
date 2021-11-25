@@ -98,9 +98,9 @@ public class UsuarioServicio implements UserDetailsService {
 		if (email==null || email.isEmpty()) {
 			throw new ErrorServicio("El email del usuario no puede ser nulo ni vacío");
 		}
-		if (telefono==null || telefono.isEmpty()) {
-			throw new ErrorServicio("El teléfono del usuario no puede ser nulo ni vacío");
-		}
+		//if (telefono==null || telefono.isEmpty()) {
+		//	throw new ErrorServicio("El teléfono del usuario no puede ser nulo ni vacío");
+		//}
 		
 	}
 	
