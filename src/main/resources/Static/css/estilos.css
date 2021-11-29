@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
 
+html {
+	
+   }
 :root{
 	--color-primary:#372FFF;
 	--color-secondary:#FA4B6A;
@@ -35,8 +38,7 @@ body{
 	background-position: center;
 	position:relative;
 	height:fit-content;
-  width: 1350px;
-
+    width: 1350px;
 }
 
 
@@ -225,6 +227,7 @@ p.pasos{
 }
 
 h3.publish_text{
+	font-size: 50;
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 100px;
