@@ -242,6 +242,7 @@ h4.profesion{
 	width:80%;
 	margin: 10px auto;
 	align-items: center;
+	text-decoration:none;
 }
 
 .subtitle-carrusel{
@@ -271,12 +272,13 @@ h4.profesion{
 	border-radius: 10px;
 	transform:scale(0.93);
 	transition: box-shadow 0.5s, transform 0.5s;
-	z-index: 1000;
+	z-index: 500;
+	text-decoration:none;
 }
 
 .empleados-wrapper:hover{
 	transform:scale(1);
-	box-shadow: 5px 20px 30px (0,0,0,0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 } 
 
 .empleados-container .empleados-wrapper{
@@ -309,7 +311,6 @@ h4.profesion{
 	padding-left:20px;
 	float:left;
 	width:calc(70%-40px);
-	
 	
 }
 
