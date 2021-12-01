@@ -14,5 +14,10 @@ public interface UsuarioRepositorio extends JpaRepository<Usuario, String> {
 	@Query("SELECT c FROM Usuario c WHERE c.documento = :documento")
 	public Usuario buscarPorDocumento(@Param("documento") String documento);
 	
+	@Query("SELECT c FROM Usuario c WHERE c.email = :email")
+	public Usuario getbyEmail(@Param("email") String email);
+	
+	
+	
 
 }
