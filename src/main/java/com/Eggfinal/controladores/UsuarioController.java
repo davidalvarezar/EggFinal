@@ -15,15 +15,17 @@ import com.Eggfinal.servicios.UsuarioServicio;
 public class UsuarioController {
 	@Autowired
 	private UsuarioServicio usuarioservicio;
-	
+
 	@GetMapping("/registro")
 	public String registro() {
 		return "usuario/agregar.html";
 	}
-	
+
 	@PostMapping("/registro")
-	public String guardarUsuario(@RequestParam String documento,@RequestParam String clave,@RequestParam String nombre,@RequestParam String apellido,@RequestParam String email, @RequestParam String telefono) throws ErrorServicio {
-		usuarioservicio.crearUsuario(documento, nombre,clave, apellido,email,telefono );
+	public String guardarUsuario(@RequestParam String documento, @RequestParam String clave,
+			@RequestParam String nombre, @RequestParam String apellido, @RequestParam String email,
+			@RequestParam String telefono) throws ErrorServicio {
+		usuarioservicio.crearUsuario(documento, nombre, clave, apellido, email, telefono);
 		return "usuario/agregar.html";
-}
+	}
 }

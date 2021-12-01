@@ -14,9 +14,22 @@ public class CustomSecurityConfig extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http
-			.authorizeRequests()
-				.antMatchers("/css/*", "/js/*", "/img/*", "/**").permitAll()
-				.and().csrf()
-					.disable();
+        .authorizeRequests()
+        .antMatchers("/css/*", "/js/*", "/img/*",
+                "/**").permitAll()
+        .and().
+        formLogin()
+        .loginPage("/login")
+        .loginProcessingUrl("/logincheck")
+        .usernameParameter("Username")
+        .passwordParameter("Password")
+        .defaultSuccessUrl("/")
+        .permitAll()
+        .and().logout()
+        .logoutUrl("/logout")
+        .logoutSuccessUrl("/login?logout")             
+        .permitAll().
+        and().csrf().disable();
+
 	}
 }

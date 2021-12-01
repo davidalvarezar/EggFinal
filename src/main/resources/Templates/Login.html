@@ -14,17 +14,22 @@
     <link rel="stylesheet" href="css/estiloslogin.css" />
   </head>
   <body>
-    <form class="formulario">
+   
+      
+      <form action="/logincheck" method="POST" class="formulario">
+      <p th:if="${error != null}" th:text="${error}" style="color:red"></p>
+               <p th:if="${logout != null}" th:text="${logout}" style="color:greenyellow"></p>
+
       <h1>Login</h1>
       <div class="contenedor">
         <div class="input-contenedor">
           <i class="fas fa-envelope icon"></i>
-          <input type="text" placeholder="Correo Electrónico" />
+          <input type="text" placeholder="Correo Electrónico" name=Username />
         </div>
 
         <div class="input-contenedor">
           <i class="fas fa-key icon"></i>
-          <input type="password" placeholder="Contraseña" />
+          <input type="password" placeholder="Contraseña" name=Password />
         </div>
         <input type="submit" value="Iniciar sesión" class="button" />
         <p>
