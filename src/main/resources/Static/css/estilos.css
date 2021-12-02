@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
 
+html {
+	
+   }
 :root{
 	--color-primary:#372FFF;
 	--color-secondary:#FA4B6A;
@@ -33,19 +36,58 @@ body{
 	background-attachment:fixed;
 	background-position: center;
 	position:relative;
+	height:calc(50vh -20px);
+	align-items: center;
+	color:#ffffff;
 }
+
+
+/*
+.shine {
+	height: 5px;
+	width: 60%;
+	background-image: radial-gradient(
+	  farthest-side at 50% -50%,
+	  hsla(0, 0%, 0%, 0.5),
+	  hsla(0, 0%, 0%, 0));
+	position: relative; 
+  }
+  
+  .shine::before {
+	height: 1px;
+	position: absolute;
+	top: -1px;
+	left: 0;
+	right: 0;
+	background-image: linear-gradient(
+	  90deg,
+	  hsla(0, 0%, 0%, 0),
+	  hsla(0, 0%, 0%, 0.75) 50%,
+	  hsla(0, 0%, 0%, 0));
+  }
+*/
+
 
 .hero .container{
 	padding:0;
+	}
+	
+.hero_texts{
+	width: 600px;
+	height: 400px;
 }
-
+.hero_title{
+	padding-left: 50px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
 .nav{
 	display:flex;
 	justify-content: flex-end;
 	height:70px;
 	align-items: center;
 	font-weight: 700;
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .nav_footer{
@@ -53,6 +95,9 @@ body{
 	justify-content: flex-start;
 }
 
+.category_description{
+	text-align: center;
+}
 .nav_item{
 	color:#ffffff;
 	text-decoration: none;
@@ -63,6 +108,11 @@ body{
 
 
 .nav_item--cta{
+	background-color: var(--color-secondary);
+	border: 1px solid #FA4B6A;
+	border-radius: 20px;
+}
+.publica{
 	background-color: var(--color-secondary);
 	border: 1px solid #FA4B6A;
 	border-radius: 20px;
@@ -81,7 +131,53 @@ body{
 }
 
 img.trabajo{
-	width: 250px; height: 250px;
+	width: 250px; 
+	height: auto;
+}
+
+.category_grid{
+	padding-bottom: 150px;
+}
+div.botones{
+	width: 300px; /*Revisar todo esto para dar forma a esos cuadros*/
+	height: 250px;/*Revisar todo esto para dar forma a esos cuadros*/
+	padding-top: 50px; /*Revisar todo esto para dar forma a esos cuadros*/
+	padding-left: 0px; /*Revisar todo esto para dar forma a esos cuadros*/
+	padding-right: 0px; /*Revisar todo esto para dar forma a esos cuadros*/
+	float: left;
+	margin-right:0px;
+	text-align: center;
+}
+
+.separar{
+	padding-bottom: 100px;
+}
+
+.boton_personalizado{
+    color:#ffffff;
+	text-decoration: none;
+	margin-left: 20px;
+	padding: 10px 15px;
+	font-weight: inherit;
+	background-color: var(--color-secondary);
+	border: 1px solid #FA4B6A;
+	border-radius: 20px;
+
+  }
+  .boton_personalizado:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+
+.botonesimportantes{
+	color:#ffffff;
+	text-decoration: none;
+	margin-left: 20px;
+	padding: 10px 15px;
+	font-weight: inherit;
+	background-color: var(--color-secondary);
+	border: 1px solid #FA4B6A;
+	border-radius: 20px;
 }
 
 a.category_cta{
@@ -89,7 +185,9 @@ a.category_cta{
 	margin-left: auto;
 	margin-right: auto;
 }
-
+.how_to_do_it{
+	padding-bottom: 50px;
+}
 div.creaperfil{
 	float: left;
 	margin-left:10px;
@@ -106,6 +204,7 @@ div.cargatarifa{
 	padding-top: 50px;
 	padding-left: 140px;
 	padding-right: 50px;
+	padding-bottom: 100px;
 	float: left;
 	margin-left:10px;
 	
@@ -116,6 +215,7 @@ div.aceptatrabaja{
 	padding-top: 50px; /*Revisar todo esto para dar forma a esos cuadros*/
 	padding-left: 150px; /*Revisar todo esto para dar forma a esos cuadros*/
 	padding-right: 50px; /*Revisar todo esto para dar forma a esos cuadros*/
+	padding-bottom: 100px;
 	float: left;
 	margin-right:10px;
 
@@ -134,15 +234,24 @@ p.pasos{
 }
 
 h3.publish_text{
+	font-size: 50;
+	align-content: center;
 	text-align: center;
 	padding-top: 50px;
+	padding-left: 460px;
+	padding-bottom: 50px;
+	width: 300px;
+}
+
+section.testimony{
+	padding-bottom: 150px;
 }
 
 div.testimony1{
 	float: left;
 	margin-left:-80px;
 	width: 300px;
-	height: 100px;
+	height: 150px;
 	padding-top: 50px;
 	padding-left: 80px;
 	padding-right: 50px;
@@ -151,7 +260,7 @@ div.testimony1{
 
 div.testimony2{
 	width: 300px;
-	height: 100px;
+	height: 150px;
 	padding-top: 50px;
 	padding-left: 100px;
 	padding-right: 20px;
@@ -162,7 +271,7 @@ div.testimony2{
 
 div.testimony3{
 	width: 300px; /*Revisar todo esto para dar forma a esos cuadros*/
-	height: 100px;/*Revisar todo esto para dar forma a esos cuadros*/
+	height: 150px;/*Revisar todo esto para dar forma a esos cuadros*/
 	padding-top: 50px; /*Revisar todo esto para dar forma a esos cuadros*/
 	padding-left: 50px; /*Revisar todo esto para dar forma a esos cuadros*/
 	padding-right: 50px; /*Revisar todo esto para dar forma a esos cuadros*/
@@ -170,6 +279,10 @@ div.testimony3{
 	margin-right:0px;
 	text-align: center;
 }
+p.testimony_text{
+	padding-bottom: 100px;
+}
+
 
 /*Esto fue agregado para pag Category--Front*/
 
@@ -342,3 +455,4 @@ h4.profesion{
 .empleados-container .empleados-wrapper .bottom .left .contact:hover i{
 	transform:rotate(360deg);
 }
+
