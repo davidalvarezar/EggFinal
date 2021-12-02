@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
 
+html {
+	
+   }
 :root{
 	--color-primary:#372FFF;
 	--color-secondary:#FA4B6A;
@@ -29,12 +32,14 @@ body{
 	background: rgb(0,0,0);
 	background-image:linear-gradient(355deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.31974796754639356) 100%),url(/img/Header.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 1350px;
 	background-attachment:fixed;
 	background-position: center;
 	position:relative;
 	height:fit-content;
-    width: 1920px;
+
+    width: 1350px;
+
 }
 
 
@@ -85,9 +90,13 @@ body{
 	background-color: #333333;
 	justify-content: flex-end;
 	height:70px;
+	width: 1350px;
 	align-items: center;
 	font-weight: 700;
-    text-transform: uppercase;
+
+    text-transform: capitalize;
+	
+
 }
 
 .nav_footer{
@@ -95,6 +104,9 @@ body{
 	justify-content: flex-start;
 }
 
+.category_description{
+	text-align: center;
+}
 .nav_item{
 	color:#ffffff;
 	text-decoration: none;
@@ -182,7 +194,7 @@ a.category_cta{
 	margin-right: auto;
 }
 .how_to_do_it{
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 }
 div.creaperfil{
 	float: left;
@@ -200,6 +212,7 @@ div.cargatarifa{
 	padding-top: 50px;
 	padding-left: 140px;
 	padding-right: 50px;
+	padding-bottom: 100px;
 	float: left;
 	margin-left:10px;
 	
@@ -210,6 +223,7 @@ div.aceptatrabaja{
 	padding-top: 50px; /*Revisar todo esto para dar forma a esos cuadros*/
 	padding-left: 150px; /*Revisar todo esto para dar forma a esos cuadros*/
 	padding-right: 50px; /*Revisar todo esto para dar forma a esos cuadros*/
+	padding-bottom: 100px;
 	float: left;
 	margin-right:10px;
 
@@ -228,9 +242,17 @@ p.pasos{
 }
 
 h3.publish_text{
+	font-size: 50;
+	align-content: center;
 	text-align: center;
 	padding-top: 50px;
-	padding-bottom: 100px;
+	padding-left: 460px;
+	padding-bottom: 50px;
+	width: 300px;
+}
+
+section.testimony{
+	padding-bottom: 150px;
 }
 
 div.testimony1{
@@ -265,7 +287,9 @@ div.testimony3{
 	margin-right:0px;
 	text-align: center;
 }
-
+p.testimony_text{
+	padding-bottom: 100px;
+}
 
 
 /*Esto fue agregado para pag Category--Front*/
