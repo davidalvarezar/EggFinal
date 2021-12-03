@@ -41,33 +41,6 @@ body{
 	color:#ffffff;
 }
 
-
-/*
-.shine {
-	height: 5px;
-	width: 60%;
-	background-image: radial-gradient(
-	  farthest-side at 50% -50%,
-	  hsla(0, 0%, 0%, 0.5),
-	  hsla(0, 0%, 0%, 0));
-	position: relative; 
-  }
-  
-  .shine::before {
-	height: 1px;
-	position: absolute;
-	top: -1px;
-	left: 0;
-	right: 0;
-	background-image: linear-gradient(
-	  90deg,
-	  hsla(0, 0%, 0%, 0),
-	  hsla(0, 0%, 0%, 0.75) 50%,
-	  hsla(0, 0%, 0%, 0));
-  }
-*/
-
-
 .hero .container{
 	padding:0;
 	}
@@ -133,61 +106,83 @@ body{
 img.trabajo{
 	width: 250px; 
 	height: auto;
+	border-radius:10px;
 }
 
 .category_grid{
 	padding-bottom: 150px;
 }
+
 div.botones{
-	width: 300px; /*Revisar todo esto para dar forma a esos cuadros*/
-	height: 250px;/*Revisar todo esto para dar forma a esos cuadros*/
-	padding-top: 50px; /*Revisar todo esto para dar forma a esos cuadros*/
-	padding-left: 0px; /*Revisar todo esto para dar forma a esos cuadros*/
-	padding-right: 0px; /*Revisar todo esto para dar forma a esos cuadros*/
+	width: 300px; 
+	height: 250px;
+	padding-top: 50px; 
+	padding-left: 0px; 
+	padding-right: 0px;
 	float: left;
 	margin-right:0px;
 	text-align: center;
 }
 
+
+.boton_txt{
+    color:var(--color-primary);
+	text-decoration: none;
+	padding: 10px 15px;
+	font-weight: 500;
+  }
+  
+.boton_txt:hover{
+    color: var(--color-secondary);
+  }
+  
 .separar{
-	padding-bottom: 100px;
+	padding-bottom: 150px;
 }
 
-.boton_personalizado{
-    color:#ffffff;
-	text-decoration: none;
-	margin-left: 20px;
-	padding: 10px 15px;
-	font-weight: inherit;
-	background-color: var(--color-secondary);
-	border: 1px solid #FA4B6A;
-	border-radius: 20px;
-
-  }
-  .boton_personalizado:hover{
-    color: #1883ba;
-    background-color: #ffffff;
-  }
-
-.botonesimportantes{
+.boton_principal{
 	color:#ffffff;
 	text-decoration: none;
 	margin-left: 20px;
 	padding: 10px 15px;
 	font-weight: inherit;
 	background-color: var(--color-secondary);
-	border: 1px solid #FA4B6A;
-	border-radius: 20px;
+	border: 2px solid #FA4B6A;
+	border-radius: 50px;
 }
+
+ .boton_principal:hover{
+    color: var(--color-secondary);
+    background-color: #ffffff;
+  }
 
 a.category_cta{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 }
-.how_to_do_it{
-	padding-bottom: 50px;
+
+hr.divisor{
+	border-top: 1px solid #e0e0e0;
+	width: 60%;
+	position:relative;
 }
+
+.how_to_do_it{
+	padding-bottom: 100px;
+	text-align: center;
+	
+}
+
+div.how_txt{
+	text-align: center;
+	
+}
+
+h2.subtitle_how_to_do_it{
+	text-align: center;
+}
+
 div.creaperfil{
 	float: left;
 	margin-left:10px;
@@ -209,6 +204,7 @@ div.cargatarifa{
 	margin-left:10px;
 	
 }
+
 div.aceptatrabaja{
 	width: 200px; /*Revisar todo esto para dar forma a esos cuadros*/
 	height: 100px;/*Revisar todo esto para dar forma a esos cuadros*/
@@ -240,7 +236,7 @@ h3.publish_text{
 	padding-top: 50px;
 	padding-left: 460px;
 	padding-bottom: 50px;
-	width: 300px;
+	width: 60%;
 }
 
 section.testimony{
@@ -279,12 +275,31 @@ div.testimony3{
 	margin-right:0px;
 	text-align: center;
 }
-p.testimony_text{
-	padding-bottom: 100px;
+
+.testimony__picture{
+	width:130x;
 }
 
+p.testimony_text{
+	padding-bottom: 150px;
+}
+
+.footer{
+	padding-top:10px;
+	background-color:#1e199b;
+}
+
+h5.footer_txt{
+	color:#ffffff;
+	padding-left: 10px;
+}
+
+span.footer_icons{
+	color:#ffffff;
+}
 
 /*Esto fue agregado para pag Category--Front*/
+
 
 .hero_cat{
 	height: 50vh;
