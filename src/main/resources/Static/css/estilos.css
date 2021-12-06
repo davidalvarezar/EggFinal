@@ -286,7 +286,7 @@ p.testimony_text{
 
 .footer{
 	padding-top:10px;
-	background-color:#1e199b;
+	background-color:#505050;
 }
 
 h5.footer_txt{
@@ -294,8 +294,8 @@ h5.footer_txt{
 	padding-left: 10px;
 }
 
-span.footer_icons{
-	color:#ffffff;
+fab fa-linkedin{
+	color:#ffffff
 }
 
 /*Esto fue agregado para pag Category--Front*/
