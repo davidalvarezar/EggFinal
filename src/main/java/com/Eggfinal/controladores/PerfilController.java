@@ -15,5 +15,12 @@ public String perfil() {
 
 	return"Profile.html";
 }
+@GetMapping("/profile")
+public String profile() {
+
+	return"EditProfile.html";
+}
+
+
 	
 }
