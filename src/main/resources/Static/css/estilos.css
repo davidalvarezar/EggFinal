@@ -38,7 +38,13 @@ body{
 	background-position: center;
 	position:relative;
 	height:fit-content;
+<<<<<<< HEAD
+
+    width: 1350px;
+
+=======
     width: 1920px;
+>>>>>>> cc083b2effb4222bd3bfea31e3518595d567d9eb
 }
 
 
@@ -91,6 +97,7 @@ body{
 	font-weight: 700;
     text-transform: capitalize;
 	
+
 }
 
 .nav_footer{
