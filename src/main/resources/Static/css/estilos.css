@@ -79,6 +79,12 @@ body{
 	font-weight: inherit;
 }
 
+.nav_item--footer{
+	color:#ffffff;
+	text-decoration: none;
+	padding: 40px 20px 10px 10px;
+	font-weight: inherit;
+}
 
 .nav_item--cta{
 	background-color: var(--color-secondary);
@@ -90,10 +96,6 @@ body{
 	border: 1px solid #FA4B6A;
 	border-radius: 20px;
 }
-/*
-.nav_item--footer{
-	padding:10px;
-}*/
 	
 .hero_container{
 	display:flex;
@@ -284,7 +286,7 @@ p.testimony_text{
 }
 
 .footer{
-	padding-top:10px;
+	margin-top:20px;
 	background-color:#505050;
 }
 
@@ -359,6 +361,7 @@ fa-linkedin::after{
 	}
 
 div.item-menu-cat{
+	margin: 0px 10px;
 	float: left;
 	padding:30px 60px 0;
 	width: 100px;
@@ -387,7 +390,7 @@ h4.profesion{
 
 .container-carrusel{
 	width:80%;
-	margin: 10px auto;
+	margin: 0px auto 80px;
 	align-items: center;
 	text-decoration:none;
 }
