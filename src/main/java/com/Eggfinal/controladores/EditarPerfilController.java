@@ -5,15 +5,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("/")
+public class EditarPerfilController {
 
-@RequestMapping("/login")
+@GetMapping("/editarperfil")
+public String editarperfil() {
 
-public class PerfilController {
-
-@GetMapping("/perfil")
-public String perfil() {
-
-	return"Profile.html";
+	return"EditProfile.html";
 }
 	
 }
+

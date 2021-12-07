@@ -27,57 +27,24 @@ body{
 	margin-bottom:35px;
 }
 
-/* Aquí la gradiente me la esta tomando al 100% no como gradiente.*/
 .hero{
 	height: 50vh;
 	background: rgb(0,0,0);
 	background-image:linear-gradient(355deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.31974796754639356) 100%),url(/img/Header.jpg);
 	background-repeat: no-repeat;
-	background-size: 1350px;
+	background-size: cover;
 	background-attachment:fixed;
 	background-position: center;
 	position:relative;
-	height:fit-content;
-<<<<<<< HEAD
-
-    width: 1350px;
-
-=======
-    width: 1920px;
->>>>>>> cc083b2effb4222bd3bfea31e3518595d567d9eb
+	height:calc(50vh -20px);
+	align-items: center;
+	color:#ffffff;
 }
-
-
-/*lineas divisoras*/
-.shine {
-	height: 5px;
-	width: 60%;
-	background-image: radial-gradient(
-	  farthest-side at 50% -50%,
-	  hsla(0, 0%, 0%, 0.5),
-	  hsla(0, 0%, 0%, 0));
-	position: relative; 
-  }
-  
-  .shine::before {
-	height: 1px;
-	position: absolute;
-	top: -1px;
-	left: 0;
-	right: 0;
-	background-image: linear-gradient(
-	  90deg,
-	  hsla(0, 0%, 0%, 0),
-	  hsla(0, 0%, 0%, 0.75) 50%,
-	  hsla(0, 0%, 0%, 0));
-  }
-/*lineas divisoras*/
-
 
 .hero .container{
 	padding:0;
-	background-color: linear-gradient(to bottom, #333333 60%, #333333 0%);
-}
+	}
+	
 .hero_texts{
 	width: 600px;
 	height: 400px;
@@ -89,15 +56,11 @@ body{
 }
 .nav{
 	display:flex;
-	background-color: #333333;
 	justify-content: flex-end;
 	height:70px;
-	width: 1350px;
 	align-items: center;
 	font-weight: 700;
-    text-transform: capitalize;
-	
-
+	text-transform: uppercase;
 }
 
 .nav_footer{
@@ -116,6 +79,7 @@ body{
 	font-weight: inherit;
 }
 
+
 .nav_item--cta{
 	background-color: var(--color-secondary);
 	border: 1px solid #FA4B6A;
@@ -131,71 +95,95 @@ body{
 	padding:10px;
 }
 
+	
 .hero_container{
 	display:flex;
 	height:calc(50vh -70px);
 	align-items: center;
 	color:#ffffff;	
 }
+
 img.trabajo{
-	width: 250px; height: 250px;
+	width: 250px; 
+	height: auto;
+	border-radius:10px;
 }
+
 .category_grid{
 	padding-bottom: 150px;
 }
+
 div.botones{
-	width: 300px; /*Revisar todo esto para dar forma a esos cuadros*/
-	height: 250px;/*Revisar todo esto para dar forma a esos cuadros*/
-	padding-top: 50px; /*Revisar todo esto para dar forma a esos cuadros*/
-	padding-left: 0px; /*Revisar todo esto para dar forma a esos cuadros*/
-	padding-right: 0px; /*Revisar todo esto para dar forma a esos cuadros*/
+	width: 300px; 
+	height: 250px;
+	padding-top: 50px; 
+	padding-left: 0px; 
+	padding-right: 0px;
 	float: left;
 	margin-right:0px;
 	text-align: center;
 }
 
+
+.boton_txt{
+    color:var(--color-primary);
+	text-decoration: none;
+	padding: 10px 15px;
+	font-weight: 500;
+  }
+  
+.boton_txt:hover{
+    color: var(--color-secondary);
+  }
+  
 .separar{
-	padding-bottom: 100px;
+	padding-bottom: 150px;
 }
 
-.boton_personalizado{
-    color:#ffffff;
-	text-decoration: none;
-	margin-left: 20px;
-	padding: 10px 15px;
-	font-weight: inherit;
-	background-color: var(--color-secondary);
-	border: 1px solid #FA4B6A;
-	border-radius: 20px;
-
-  }
-  .boton_personalizado:hover{
-    color: #1883ba;
-    background-color: #ffffff;
-  }
-
-.botonesimportantes{
+.boton_principal{
 	color:#ffffff;
 	text-decoration: none;
 	margin-left: 20px;
 	padding: 10px 15px;
 	font-weight: inherit;
 	background-color: var(--color-secondary);
-	border: 1px solid #FA4B6A;
-	border-radius: 20px;
+	border: 2px solid #FA4B6A;
+	border-radius: 50px;
 }
+
+ .boton_principal:hover{
+    color: var(--color-secondary);
+    background-color: #ffffff;
+  }
 
 a.category_cta{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+}
 
+hr.divisor{
+	border-top: 1px solid #e0e0e0;
+	width: 60%;
+	position:relative;
 }
+
 .how_to_do_it{
-	padding-bottom: 50px;
-}
-div.creaperfil{
+	padding-bottom: 100px;
+	text-align: center;
 	
+}
+
+div.how_txt{
+	text-align: center;
+	
+}
+
+h2.subtitle_how_to_do_it{
+	text-align: center;
+}
+
+div.creaperfil{
 	float: left;
 	margin-left:10px;
 	width: 200px;
@@ -203,8 +191,8 @@ div.creaperfil{
 	padding-top: 50px;
 	padding-left: 80px;
 	padding-right: 50px;
-
 }
+
 div.cargatarifa{
 	width: 200px;
 	height: 100px;
@@ -216,6 +204,7 @@ div.cargatarifa{
 	margin-left:10px;
 	
 }
+
 div.aceptatrabaja{
 	width: 200px; /*Revisar todo esto para dar forma a esos cuadros*/
 	height: 100px;/*Revisar todo esto para dar forma a esos cuadros*/
@@ -247,7 +236,7 @@ h3.publish_text{
 	padding-top: 50px;
 	padding-left: 460px;
 	padding-bottom: 50px;
-	width: 300px;
+	width: 60%;
 }
 
 section.testimony{
@@ -286,11 +275,198 @@ div.testimony3{
 	margin-right:0px;
 	text-align: center;
 }
+
+.testimony__picture{
+	width:130x;
+}
+
 p.testimony_text{
-	padding-bottom: 100px;
+	padding-bottom: 150px;
 }
 
 .footer{
-	background-color:#333333;
+	padding-top:10px;
+	background-color:#505050;
 }
-/* Quedé minuto 39:44 del video pero no hay que hacer lo del wave*/
+
+h5.footer_txt{
+	color:#ffffff;
+	padding-left: 10px;
+}
+
+fab fa-linkedin{
+	color:#ffffff
+}
+
+/*Esto fue agregado para pag Category--Front*/
+
+
+.hero_cat{
+	height: 50vh;
+	background: rgb(0,0,0);
+	background-image:linear-gradient(355deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.31974796754639356) 100%),url(/img/HeroCat.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	background-position: center;
+	position:relative;
+	height:calc(50vh -20px);
+	align-items: center;
+	color:#ffffff;
+}
+
+.hero_cat .container{
+	padding:0;
+}
+
+.logo{
+	align-items:left;
+	height:30px;
+	text-align: left;
+}
+
+.nav_item--clicked{
+	color: var(--color-primary);	
+}
+
+.container-menu_categorias{
+	align-items: center;
+	width:50%;
+	margin: 80px auto;
+	height: 200px;
+	background-color:#ffffff;
+	border-radius:20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	}
+
+div.item-menu-cat{
+	float: left;
+	padding:30px 60px 0;
+	width: 100px;
+	height: auto;
+	text-align: center;
+	
+}
+
+a.item-menu-cat{
+	text-decoration: none;
+	text-align: center;
+	color:#333333;
+	font-size: 18px;
+	line-height: 12px;
+	margin-bottom:35px;
+}
+
+h4.profesion{
+	text-decoration: none;
+	text-align: center;
+	color:#333333;
+	font-size: 18px;
+	line-height: 12px;
+	
+}
+
+.container-carrusel{
+	width:80%;
+	margin: 10px auto;
+	align-items: center;
+	text-decoration:none;
+}
+
+.subtitle-carrusel{
+	text-decoration: none;
+	text-align: left;
+	color:#333333;
+	font-size: 32px;
+	line-height: 36px;	
+}
+
+.empleados-container{
+	background:transparent;
+	display:flex;
+	justify-content: top;
+	align-items: center;
+	width:100%;
+	height:50vh;
+}
+
+.empleados-wrapper{
+	width:450px;
+	height:500px;
+	background:transparent;
+	margin:auto;
+	position:relative;
+	overflow:hidden;
+	border-radius: 10px;
+	transform:scale(0.93);
+	transition: box-shadow 0.5s, transform 0.5s;
+	z-index: 500;
+	text-decoration:none;
+}
+
+.empleados-wrapper:hover{
+	transform:scale(1);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	height:500px;
+} 
+
+.empleados-container .empleados-wrapper{
+	width:100%;
+	height:auto;
+
+}
+
+ .empleados-container .empleados-wrapper .top{
+	width:100%;
+	height:80%;
+	background-size: 100%;
+}
+
+.empleados-container .empleados-wrapper .bottom{
+	width:100%;
+	height:20%;
+	transition: transform 0.5s;
+}
+
+.empleados-container .empleados-wrapper .bottom .left{
+	width:100%;
+	height:100%;
+	background:#ffffff;
+	position:relative;
+	float:left;
+}
+
+.empleados-container .empleados-wrapper  .bottom .left .details{
+	padding-left:20px;
+	float:left;
+	width:calc(70%-40px);
+	
+}
+
+.empleados-container .empleados-wrapper  .bottom .left .details .txt_empleados{
+	font-size:21px;
+	color:#333333;
+}
+
+.empleados-container .empleados-wrapper  .bottom .left .details .parrafo_empleados{
+	font-size:14px;
+	color:#333333;
+}
+.empleados-container .empleados-wrapper .bottom .left .contact{
+	float:right;
+	height:100%;
+	background:#f1f1f1;
+	transition:background 0.5s;
+	border-left: solid thin rgba(51,51,51,0.1);
+}
+
+.empleados-container .empleados-wrapper .bottom .left .contact i{
+	font-size: 24px;
+	padding:30px;
+	color: var(--color-primary);
+	transition:transform 0.5s;
+}
+
+.empleados-container .empleados-wrapper .bottom .left .contact:hover i{
+	transform:rotate(360deg);
+}
