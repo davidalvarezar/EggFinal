@@ -16,7 +16,6 @@ import com.Eggfinal.servicios.UsuarioServicio;
 public class IniciarSesionController {
 	@Autowired
 	private UsuarioServicio usuarioServicio;
-
 	@GetMapping("/login")
 	public String login(@RequestParam(required = false) String error, @RequestParam(required = false) String logout,
 			ModelMap model) {
