@@ -90,11 +90,10 @@ body{
 	border: 1px solid #FA4B6A;
 	border-radius: 20px;
 }
-
+/*
 .nav_item--footer{
 	padding:10px;
-}
-
+}*/
 	
 .hero_container{
 	display:flex;
@@ -292,11 +291,31 @@ p.testimony_text{
 h5.footer_txt{
 	color:#ffffff;
 	padding-left: 10px;
+	text-decoration: none;
 }
 
-fab fa-linkedin{
-	color:#ffffff
+h5.footer_txt:hover{
+	color:#ffffff;
+	padding-left: 10px;
+	text-decoration: none;
 }
+
+h5.footer_txt::after{
+	color:#ffffff;
+	padding-left: 10px;
+	text-decoration: none;
+}
+
+fa-linkedin{
+	color:#ffffff;
+	font-size:24px;
+}
+
+fa-linkedin::after{
+	color:#ffffff;
+	font-size:24px;
+}
+
 
 /*Esto fue agregado para pag Category--Front*/
 
@@ -408,6 +427,7 @@ h4.profesion{
 	transform:scale(1);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 	height:500px;
+	margin-bottom:40px;
 } 
 
 .empleados-container .empleados-wrapper{
