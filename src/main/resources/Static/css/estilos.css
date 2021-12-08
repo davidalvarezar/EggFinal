@@ -46,17 +46,16 @@ body{
 	}
 	
 .hero_texts{
-	width: 600px;
-	height: 400px;
+	width: auto;
+	height: 600px;
 }
 .hero_title{
-	padding-left: 50px;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding:60px 50px 30px;
 }
+
 .nav{
 	display:flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	height:70px;
 	align-items: center;
 	font-weight: 700;
@@ -77,6 +76,7 @@ body{
 	margin-left: 20px;
 	padding: 10px 15px;
 	font-weight: inherit;
+	text-transform: uppercase;
 }
 
 .nav_item--logo{
@@ -95,6 +95,7 @@ body{
 	background-color: var(--color-secondary);
 	border: 1px solid #FA4B6A;
 	border-radius: 20px;
+	margin-left:50px;
 }
 
 .nav_item--cta2{
@@ -108,12 +109,6 @@ body{
 	color: var(--color-primary);	
 }
 
-
-.publica{
-	background-color: var(--color-secondary);
-	border: 1px solid #FA4B6A;
-	border-radius: 20px;
-}
 	
 .hero_container{
 	display:flex;
@@ -156,7 +151,7 @@ div.botones{
   }
   
 .separar{
-	padding-bottom: 150px;
+	padding-bottom: 100px;
 }
 
 .boton_principal{
@@ -170,10 +165,21 @@ div.botones{
 	border-radius: 50px;
 }
 
- .boton_principal:hover{
+.boton_principal:hover{
     color: var(--color-secondary);
     background-color: #ffffff;
   }
+  
+.boton_deshabilitado{
+	color:#8d8d8d;
+	text-decoration: none;
+	margin-left: 20px;
+	padding: 10px 15px;
+	font-weight: inherit;
+	background-color: #bdbdbd;
+	border: 2px solid #bdbdbd;
+	border-radius: 50px;
+}
 
 a.category_cta{
 	text-align: center;
@@ -188,7 +194,7 @@ hr.divisor{
 }
 
 .how_to_do_it{
-	padding-bottom: 100px;
+	padding-bottom: 40px;
 	text-align: center;
 	
 }
@@ -337,7 +343,7 @@ fa-linkedin::after{
 }
 
 
-/*Esto fue agregado para pag Category--Front*/
+/*Esto fue agregado para pag Categorias*/
 
 
 .hero_cat{
@@ -358,15 +364,16 @@ fa-linkedin::after{
 	padding:0;
 }
 
-.logo{
+img.logo{
 	align-items:left;
 	height:30px;
 	text-align: left;
+	margin-right: 495px;
 }
 
 .container-menu_categorias{
 	align-items: center;
-	width:50%;
+	width:60%;
 	margin: 80px auto;
 	height: 200px;
 	background-color:#ffffff;
@@ -377,7 +384,7 @@ fa-linkedin::after{
 div.item-menu-cat{
 	margin: 0px 10px;
 	float: left;
-	padding:30px 60px 0;
+	padding:30px 47px 0;
 	width: 100px;
 	height: auto;
 	text-align: center;
@@ -404,7 +411,7 @@ h4.profesion{
 
 .container-carrusel{
 	width:80%;
-	margin: 0px auto 80px;
+	margin: 0px auto 150px;
 	align-items: center;
 	text-decoration:none;
 }
@@ -507,4 +514,7 @@ h4.profesion{
 .empleados-container .empleados-wrapper .bottom .left .contact:hover i{
 	transform:rotate(360deg);
 }
+
+
+
 

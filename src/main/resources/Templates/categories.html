@@ -19,7 +19,6 @@
           <a href="/" class="nav_item nav_item--logo"><img class="logo" src="/img/Logo_Blanco.svg" alt="AltoJobs"/></a>
           <a href="/" class="nav_item">Home</a>
         	<a href="/categoriass" class="nav_item nav_item--clicked">Categorías</a>
-          <a href="/ofertas_laborales" class="nav_item">Ofertas laborales</a>
            <a href="/login" class="nav_item nav_item--cta" th:if="${session.usuariosession == null}">Iniciar sesión</a>
         <a href="/logout" class="nav_item nav_item--cta2" th:if="${session.usuariosession != null}">Salir</a>
         </nav>
@@ -119,25 +118,7 @@
       		</div>
       	</div>
       	
-      	 <div class="empleados-wrapper">
-      		<div class="empleados-card">
-      			<img class="top" src="/img/LucianoZamponi.jpg" alt="Luciano Zamponi">
-      			<div class="bottom">
-      				<div class="left">
-      					<div class="details">
-      					<h2 class="txt_empleados">Luciano Zamponi</h2>
-      					<p class="parrafo_empleados">Soy proveedor de articulos eléctricos</p >
-      					</div>
-      					<div class="contact">
-      					<a href="#">
-      						<i class="fas fa-address-book"></i>
-      					</div>
-      				</div >
-      			</div>
-      		</div>
       	</div>
-      	
-      	
       </div>
         </section>
         
@@ -199,22 +180,7 @@
       		</div>
       	</div>
       	
-      	 <div class="empleados-wrapper">
-      		<div class="empleados-card">
-      			<img class="top" src="/img/FernandoFernandez.jpg" alt="Fernando Fernandez">
-      			<div class="bottom">
-      				<div class="left">
-      					<div class="details">
-      					<h2 class="txt_empleados">Fernando Fernandez</h2>
-      					<p class="parrafo_empleados">En búsqueda de algo estable</p >
-      					</div>
-      					<div class="contact">
-      					<a href="#">
-      						<i class="fas fa-address-book"></i>
-      					</div>
-      				</div >
-      			</div>
-      		</div>
+      	
       	</div>
       	</div>
         </section>
@@ -277,22 +243,6 @@
       		</div>
       	</div>
       	
-      	 <div class="empleados-wrapper">
-      		<div class="empleados-card">
-      			<img class="top" src="/img/AnaSuaréz.jpg" alt="Ana Suaréz">
-      			<div class="bottom">
-      				<div class="left">
-      					<div class="details">
-      					<h2 class="txt_empleados">Ana Suaréz</h2>
-      					<p class="parrafo_empleados">Trabajo la jardinería sustentable</p >
-      					</div>
-      					<div class="contact">
-      					<a href="#">
-      						<i class="fas fa-address-book"></i>
-      					</div>
-      				</div >
-      			</div>
-      		</div>
       	</div>
       	</div>
         </section>
@@ -361,7 +311,7 @@
     </main>
     
 
-    <footer class="footer">
+   <footer class="footer">
       <div class="container footer_grid">
         <section class="footer_title">
           <h5 class="footer_txt" style="text-decoration:none;">
@@ -371,11 +321,8 @@
         <nav class="nav_footer">
           <a href="/" class="nav_item--footer">Home</a>
           <a href="/categoriass" class="nav_item--footer">Categorías</a>
-          <a href="/ofertaslaborales" class="nav_item--footer">Ofertas laborales</a>
-          <a href="#" class="nav_item--footer">Publicá una oferta</a>
           <a href="/login" class="nav_item--footer">Inicia sesión</a>
           <a href="/registrate" class="nav_item--footer">Regístrate</a>
-          <a href="#" class="nav_item--footer">Contacto</a>
           <span class="footer_icons">
             <a class="fab fa-linkedin" href="#" style="color:#ffffff;
 	font-size:24px; vertical-align:middle;"></a>

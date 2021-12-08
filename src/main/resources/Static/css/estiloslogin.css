@@ -1,27 +1,43 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-   background: url(/img/Degradado.jpg);
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
+
+html{
+	
+   }
+   
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 100px 0 300px;
+   	background: rgb(250,75,106);
+	background: linear-gradient(137deg, rgba(250,75,106,1) 0%, rgba(55,47,255,1) 100%); 
     background-size: cover;
     background-attachment: fixed;
 }
+
 * {
     box-sizing: border-box;
 }
+
+.formulario{
+    background: #fff;
+    margin: 100px 0px;
+    padding: 3px;
+    border-radius:20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1); 
+}
+
+h1{
+    text-align: center;
+    color: #333333;
+    font-size: 40px;
+    line-height: 48px;
+}
+
 .contenedor{
     width: 100%;
     padding: 15px;
 }
-.formulario{
-    background: #fff;
-    margin-top: 150px;
-    padding: 3px;
-}
-h1{
-    text-align: center;
-    color: black;
-    font-size: 40px;
-}
+
+
 input[type="text"],
 input[type="password"]{
     font-size: 20px;
@@ -29,39 +45,59 @@ input[type="password"]{
     padding: 10px;
     border: none;
 }
+
 .input-contenedor{
     margin-bottom: 15px;
-    border: 1px solid #aaa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
 }
 .icon{
     min-width: 50px;
     text-align: center;
-    color: #999;
+    color: #8d8d8d;
 }
 .button{
-    border: none;
-    width: 100%;
+    border: 2px solid #372FFF;
+    width: auto;
     color: white;
     font-size: 20px;
     background:  #372FFF;
     padding: 15px 20px;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
+    margin:24px 0px 12px;
 }
+
 .button:hover{
-    background: #FA4B6A;
+    border: 2px solid #372FFF;
+    width: auto;
+    color: #372FFF;
+    font-size: 20px;
+    background: transparent;
+    padding: 15px 20px;
+    border-radius: 50px;
+    margin:24px 0px 2px;
 }
+
 p{
     text-align: center;
+    color:#333333;
+   	padding:10px 0;
 }
+
+hr.divisor{
+	border-top: 1px solid #e0e0e0;
+	width: 90%;
+	position:relative;
+}
+
 .link{
     text-decoration: none;
-      color: #372FFF;
-    font-weight: 600;
+	padding: 10px 5px;
+	font-weight: 500;
+	color: #372FFF;
 }
-.link:hover{
-     color: #FA4B6A;
-}
+
 @media(min-width:768px)
 {
     .formulario{
