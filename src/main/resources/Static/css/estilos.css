@@ -79,6 +79,11 @@ body{
 	font-weight: inherit;
 }
 
+.nav_item--logo{
+	float:left;
+}
+
+
 .nav_item--footer{
 	color:#ffffff;
 	text-decoration: none;
@@ -91,6 +96,19 @@ body{
 	border: 1px solid #FA4B6A;
 	border-radius: 20px;
 }
+
+.nav_item--cta2{
+	background-color: transparent;
+	border: 2px solid #FA4B6A;
+	border-radius: 20px;
+	color:var(--color-secondary);
+}
+
+.nav_item--clicked{
+	color: var(--color-primary);	
+}
+
+
 .publica{
 	background-color: var(--color-secondary);
 	border: 1px solid #FA4B6A;
@@ -235,7 +253,7 @@ h3.publish_text{
 	align-content: center;
 	text-align: center;
 	padding-top: 50px;
-	padding-left: 460px;
+	padding-left: 250px;
 	padding-bottom: 50px;
 	width: 60%;
 }
@@ -344,10 +362,6 @@ fa-linkedin::after{
 	align-items:left;
 	height:30px;
 	text-align: left;
-}
-
-.nav_item--clicked{
-	color: var(--color-primary);	
 }
 
 .container-menu_categorias{
