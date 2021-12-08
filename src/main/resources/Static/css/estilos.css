@@ -46,17 +46,16 @@ body{
 	}
 	
 .hero_texts{
-	width: 600px;
-	height: 400px;
+	width: auto;
+	height: 600px;
 }
 .hero_title{
-	padding-left: 50px;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding:60px 50px 30px;
 }
+
 .nav{
 	display:flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	height:70px;
 	align-items: center;
 	font-weight: 700;
@@ -77,22 +76,37 @@ body{
 	margin-left: 20px;
 	padding: 10px 15px;
 	font-weight: inherit;
+	text-transform: uppercase;
 }
 
+.nav_item--logo{
+	float:left;
+}
+
+
+.nav_item--footer{
+	color:#ffffff;
+	text-decoration: none;
+	padding: 40px 20px 10px 10px;
+	font-weight: inherit;
+}
 
 .nav_item--cta{
 	background-color: var(--color-secondary);
 	border: 1px solid #FA4B6A;
 	border-radius: 20px;
-}
-.publica{
-	background-color: var(--color-secondary);
-	border: 1px solid #FA4B6A;
-	border-radius: 20px;
+	margin-left:50px;
 }
 
-.nav_item--footer{
-	padding:10px;
+.nav_item--cta2{
+	background-color: transparent;
+	border: 2px solid #FA4B6A;
+	border-radius: 20px;
+	color:var(--color-secondary);
+}
+
+.nav_item--clicked{
+	color: var(--color-primary);	
 }
 
 	
@@ -137,7 +151,7 @@ div.botones{
   }
   
 .separar{
-	padding-bottom: 150px;
+	padding-bottom: 100px;
 }
 
 .boton_principal{
@@ -151,10 +165,21 @@ div.botones{
 	border-radius: 50px;
 }
 
- .boton_principal:hover{
+.boton_principal:hover{
     color: var(--color-secondary);
     background-color: #ffffff;
   }
+  
+.boton_deshabilitado{
+	color:#8d8d8d;
+	text-decoration: none;
+	margin-left: 20px;
+	padding: 10px 15px;
+	font-weight: inherit;
+	background-color: #bdbdbd;
+	border: 2px solid #bdbdbd;
+	border-radius: 50px;
+}
 
 a.category_cta{
 	text-align: center;
@@ -169,7 +194,7 @@ hr.divisor{
 }
 
 .how_to_do_it{
-	padding-bottom: 100px;
+	padding-bottom: 40px;
 	text-align: center;
 	
 }
@@ -234,7 +259,7 @@ h3.publish_text{
 	align-content: center;
 	text-align: center;
 	padding-top: 50px;
-	padding-left: 460px;
+	padding-left: 250px;
 	padding-bottom: 50px;
 	width: 60%;
 }
@@ -285,20 +310,40 @@ p.testimony_text{
 }
 
 .footer{
-	padding-top:10px;
+	margin-top:20px;
 	background-color:#505050;
 }
 
 h5.footer_txt{
 	color:#ffffff;
 	padding-left: 10px;
+	text-decoration: none;
 }
 
-fab fa-linkedin{
-	color:#ffffff
+h5.footer_txt:hover{
+	color:#ffffff;
+	padding-left: 10px;
+	text-decoration: none;
 }
 
-/*Esto fue agregado para pag Category--Front*/
+h5.footer_txt::after{
+	color:#ffffff;
+	padding-left: 10px;
+	text-decoration: none;
+}
+
+fa-linkedin{
+	color:#ffffff;
+	font-size:24px;
+}
+
+fa-linkedin::after{
+	color:#ffffff;
+	font-size:24px;
+}
+
+
+/*Esto fue agregado para pag Categorias*/
 
 
 .hero_cat{
@@ -319,19 +364,16 @@ fab fa-linkedin{
 	padding:0;
 }
 
-.logo{
+img.logo{
 	align-items:left;
 	height:30px;
 	text-align: left;
-}
-
-.nav_item--clicked{
-	color: var(--color-primary);	
+	margin-right: 495px;
 }
 
 .container-menu_categorias{
 	align-items: center;
-	width:50%;
+	width:60%;
 	margin: 80px auto;
 	height: 200px;
 	background-color:#ffffff;
@@ -340,8 +382,9 @@ fab fa-linkedin{
 	}
 
 div.item-menu-cat{
+	margin: 0px 10px;
 	float: left;
-	padding:30px 60px 0;
+	padding:30px 47px 0;
 	width: 100px;
 	height: auto;
 	text-align: center;
@@ -368,7 +411,7 @@ h4.profesion{
 
 .container-carrusel{
 	width:80%;
-	margin: 10px auto;
+	margin: 0px auto 150px;
 	align-items: center;
 	text-decoration:none;
 }
@@ -408,6 +451,7 @@ h4.profesion{
 	transform:scale(1);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 	height:500px;
+	margin-bottom:40px;
 } 
 
 .empleados-container .empleados-wrapper{
@@ -469,4 +513,9 @@ h4.profesion{
 
 .empleados-container .empleados-wrapper .bottom .left .contact:hover i{
 	transform:rotate(360deg);
+
 }
+
+
+
+

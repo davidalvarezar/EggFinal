@@ -1,60 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AltoJobs</title>
-    <link rel="stylesheet" href="/css/estilos.css" />
-</head>
-<body>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/estilosprofile.css" />
 
-    <body>
-      <div class="main-container">
-        <div class="container mt-7">
-          <div class="row">
-            <div class="col-xl-8 m-auto order-xl-2 mb-5 mb-xl-0">
-              <div class="card card-profile shadow">
-                <div class="row justify-content-center">
-                  <div class="col-lg-3 order-lg-2">
-                    <div class="profile-image">
-                      <a href="#">
-                        <img src="" class="image-circle">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-                  <div class="d-flex justify-content-between">
-                    <a href="#" class="boton1">Nose</a>
-                    <a href="/login/profile" class="boton2">Editar perfil</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="text-center">
-                    <h3>
-                     Nombre<span class="nombre"></span>
-                    </h3>
-                    <div class="h5 mt-4">
-                      <i class="oficio"></i>Oficio
-                    </div>
-                    <div>
-                      <i class="oficio"></i>Oficio
-                    </div>
-                    <hr class="my-4">
-                    <p>Aca va el sobre mi</p>
-                    <a href="" target="_blank">Link, contactarme?</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  </head>
+  
+  <body>
+    <header class="hero_profile">
+      <div class="container">
+        <nav class="nav">
+
+          <a href="/" class="nav_item nav_item--logo"><img class="logo" src="/img/Logo.svg" alt="AltoJobs"/></a>
+          <a href="/" class="nav_item">Home</a>
+        	<a href="/categoriass" class="nav_item">Categorías</a>
+           <a href="/login" class="nav_item nav_item--cta" th:if="${session.usuariosession == null}">Iniciar sesión</a>
+        <a href="/logout" class="nav_item nav_item--cta2" th:if="${session.usuariosession != null}">Salir</a>
+        </nav>
       </div>
-      <footer class="footer">
-        <div class="row align-items-center justify-content-xl-between">
-        </div>
-      </footer>
-    </body>
+    </header>
+   
+    <main>
+    <center>
+     <div class="contenedor">
+ 	<h1>Perfil</h1>
+ 	
+ 	<div class="contenedor_perfil">
+ 	    <div class="txt_box">
+         <a href="/editarperfil" style="text-decoration: none;">
+           <p>Termina de editar tu perfil para poder postular a las diferentes ofertas laborales</p>
+            </a>
+           <i class="fas fa-x icon"></i>
+          </div>
+          
+      <div class="profile-user-info">
+       	<div class="profile-info-row">
+			<div class="profile-info-name">Nombre Completo</div>
+
+			<div class="profile-info-value">
+			<span>Nombre</span>
+			</div>
+		</div>
+		
+		<div class="hr hr-8 dotted"></div>
+		<div class="profile-info-row">
+			<div class="profile-info-name">DNI</div>
+
+			<div class="profile-info-value">
+			<span>Dni</span>
+			</div>
+		</div>
+		<div class="hr hr-8 dotted"></div>
+		
+		<div class="hr hr-8 dotted"></div>
+		<div class="profile-info-row">
+			<div class="profile-info-name">Oficio</div>
+
+			<div class="profile-info-value">
+			<span>Oficio</span>
+			</div>
+		</div>
+		<div class="hr hr-8 dotted"></div>
+		
+		<div class="hr hr-8 dotted"></div>
+		<div class="profile-info-row">
+			<div class="profile-info-name">Correo Electrónico</div>
+
+			<div class="profile-info-value">
+			<span>Correo Electrónico</span>
+			</div>
+		</div>
+		<div class="hr hr-8 dotted"></div>
+		
+		<div class="hr hr-8 dotted"></div>
+		<div class="profile-info-row">
+			<div class="profile-info-name">Teléfono</div>
+
+			<div class="profile-info-value">
+			<span>Teléfono</span>
+			</div>
+		</div>
+		<div class="hr hr-8 dotted"></div>
+		
+		<div class="hr hr-8 dotted"></div>
+		<div class="profile-info-row">
+			<div class="profile-info-name">Contraseña</div>
+
+			<div class="profile-info-value">
+			<span>Contraseña</span>
+			</div>
+		</div>
+		<div class="hr hr-8 dotted"></div>
+		
+	</div>
+		
+		
+
+        
+        <center>
+        <input type="submit" value="Iniciar sesión" class="button"/></center>
+       
+        
+        <hr class="divisor">
+        
+        <p>
+          ¿No tienes una cuenta?
+          <a class="link" href="registrate">Regístrate </a>
+        </p>
+      </div>
+    </div>
+</center>
+      </section>
+    
+    </main>
+    
+
+   <footer class="footer">
+      <div class="container footer_grid">
+        <section class="footer_title">
+          <h5 class="footer_txt" style="text-decoration:none;">
+            Copyright © 2021 AltoJobs - Todos los derechos reservados
+          </h5>
+        </section>
+        <nav class="nav_footer">
+          <a href="/" class="nav_item--footer">Home</a>
+          <a href="/categoriass" class="nav_item--footer">Categorías</a>
+          <a href="/login" class="nav_item--footer">Inicia sesión</a>
+          <a href="/registrate" class="nav_item--footer">Regístrate</a>
+          <span class="footer_icons">
+            <a class="fab fa-linkedin" href="#" style="color:#ffffff;
+	font-size:24px; vertical-align:middle;"></a>
+          </span>
+        </nav>
+      </div>
+    </footer>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/fc0febdd06.js" crossorigin="anonymous"></script>
+  </body>
 </html>

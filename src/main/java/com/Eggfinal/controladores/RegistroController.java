@@ -25,9 +25,9 @@ public class RegistroController {
 
 	@PostMapping("/registrar")
 	public String registrar(ModelMap modelo, @RequestParam String nombre, @RequestParam String Documento,
-			@RequestParam String correo, @RequestParam String telefono, @RequestParam String Contraseña)
+			@RequestParam String correo, @RequestParam String telefono, @RequestParam String Contraseña, @RequestParam String oficio)
 			throws ErrorServicio {
-		usuarioServicio.crearUsuario(nombre, Documento, correo, telefono, Contraseña, null);
+		usuarioServicio.crearUsuario(nombre, Documento, correo, telefono, Contraseña, oficio);
 		return "Login.html";
 	}
 }

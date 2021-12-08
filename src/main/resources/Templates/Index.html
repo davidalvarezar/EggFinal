@@ -1,194 +1,186 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AltoJobs</title>
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/estilos.css" />
 
-  </head>
-  
-  <body>
-    <header class="hero">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>AltoJobs</title>
+	<link rel="stylesheet" href="/css/normalize.css" />
+	<link rel="stylesheet" href="/css/estilos.css" />
 
-      <nav class="nav">
-        <a href="/" class="nav_item"><img class="logo" src="/img/Logo.svg" alt="AltoJobs"/></a>
-        <a href="/" class="nav_item">Home</a>
-        <a href="/categoriass" class="nav_item">Categorías</a>
+</head>
 
-        <a href="/ofertas" class="nav_item">Ofertas laborales</a>
+<body>
+	<header class="hero">
 
-        <a href="/login" class="nav_item nav_item--cta">Iniciar sesión</a>
-      </nav>
-      <div class="container">
-        <section class="hero_container">
-          <div class="hero_texts">
-            <h1 class="hero_title">Encontrá laburo en minutos</h1>
-            <a href="/registrate" class="nav_item nav_item--cta">regístrate como empleado</a>
-            <a href="/ofertas" class="nav_item nav_item--cta">publicá una oferta laboral</a>
-
-          </div>
-        </section>
-      </div>
-    </header>
-   
-    <main>
-      <section class="container category_grid">
-        <center><h1 class="subtitle category">
-
-          ¿Necesitás que alguien haga lo que vos no sabes?
-        </h1></center>
-        <h3 class="category_description">
-          Revisá la categorías con las que te podemos ayudar
-        </h3>
-        <div class="botones">
-        <img
-          class="trabajo"
-          src="/img/Gasista.jpg"
-          alt="Gasista" HSPACE="20" VSPACE="20"
-        />
-        <a class="boton_personalizado" href="">Ver gasistas</a>
-        </div>
-        <div class="botones">
-        <img
-          class="trabajo"
-          src="/img/Plomero.jpg"
-          alt="Plomero" HSPACE="20" VSPACE="20"
-        />
-        <a class="boton_personalizado" href="">Ver plomeros</a>
-      </div>
-      <div class="botones">
-        <img
-          class="trabajo"
-          src="/img/Jardinero.jpg"
-          alt="Jardinero" HSPACE="20" VSPACE="20"
-        />
-        <a class="boton_personalizado" href="">Ver jardineros</a>
-      </div>
-      <div class="botones">
-        <img
-          class="trabajo"
-          src="/img/Electricista.jpg"
-          alt="Electricista" HSPACE="20" VSPACE="20"
-        />
-        <a class="boton_personalizado" href="">Ver electricistas</a>
-      </div>
-       
-    </section>
-    <div class="separar">
-    <center><a href="/categoriass" class="botonesimportantes"> Ver todas las categorías ></a></center>
-  </div>
-
-    <hr class="shine">
+		<nav class="nav">
+			<a href="/" class="nav_item"><img class="logo" src="/img/Logo.svg" alt="AltoJobs" /></a>
+			<a href="/" class="nav_item">Home</a>
+			<a href="/categoriass" class="nav_item">Categorías</a>
+			<a href="/login" class="nav_item nav_item--cta" th:if="${session.usuariosession == null}">Iniciar sesión</a>
+			<a href="/logout" class="nav_item nav_item--cta2" th:if="${session.usuariosession != null}">Salir</a>
 
 
-	<section class="container how_to_do_it">
-        <div style="align-content: center;" class="how_text">
-          <h2 style="text-align: center;" class="subtitle how_to_do_it">¿Cómo funciona esto?</h2>
-          <div class="creaperfil">
-            <img class="imagencomo" src="/img/Icono1.svg" alt="Icono 1" />
-            <h4 class="como">Crea tu perfil</h4>
-            <p class="pasos">Completa tus datos personales sin moverte de casa.</p>
-          </div>
-          
-          <div class="cargatarifa">
-            <img class="imagencomo" src="/img/Icono2.svg" alt="Icono 2" />
-            <h4 class="como">Cargá tu tarifario</h4>
-            <p class="pasos">Al crear un tarifario los empleadores podrán ver rápidamente tus
-              precios.</p>
-          </div>
-          
-          <div class="aceptatrabaja">
-            <img class="imagencomo" src="/img/Icono3.svg" alt="Icono 3" />
-            <h4 class="como">Aceptá y trabajá</h4>
-            <p class="pasos">Vos elegís a que trabajos postular. Solo tenes que responder en
-              las ofertas publicadas.</p>
-          </div>
-          
-        </div>
-      </section>
-      
-
-     <hr class="shine">
-
-      <section class="container publication">
-        <div class="publish_text">
-          <h2 style="text-align: center;" class="subtitle publication">
-            ¿Querés publicar una oferta en específico?
-          </h2>
-          <h3 class="publish_text">
-            Creá una oferta laboral y los empleados publicarán si están
-            disponibles para realizar ese trabajo.
-          </h3>
-          
-        </div>
-
-        <center><a href="#" class="botonesimportantes">Crear oferta</a></center>
-      </section>
-      
-      <hr class="shine">
-
-      <section class="container testimony">
-        <div class="testimony_title">
-          <center><h2 class="subtitle testimony">Testimonios</h2></center>
-        </div>
-        <div class="testimony1">
-          <img style="align-self: center;" class="testimony__picture" src="/img/Fresia.png" alt="Fresia Colucci"/>
-          <h4 class="testimony_name">Fresia Colucci</h4>
-          <p class="testimony_text">
-            "He hecho el dinero para el verano, es una buena plataforma para
-            ofrecer mis servicios de paisajismo y jardinería."
-          </p>
-        </div>
-        <div class="testimony2">
-          <img class="testimony__picture" src="/img/Maria.png" alt="María De La Cerda"/>
-          <h4 class="testimony_name">María De La Cerda</h4>
-          <p class="testimony_text">
-            "Anduve re bien con el plomero que contraté. Lo pedi de un día para
-            otro y no tuvimos ningún problema."
-          </p>
-        </div>
-        <div class="testimony3">
-          <img class="testimony__picture" src="/img/Lautaro.png" alt="Lautaro Alvarez"/>
-          <h4 class="testimony_name">Lautaro Alvarez</h4>
-          <p class="testimony_text">
-            "Lo poco que llevo usando este servicio me ha resultado genial."
-          </p>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container footer_grid">
-        <section class="footer_title">
-          <h5 class="footer_txt">
-            Copyright © 2021 AltoJobs - Todos los derechos reservados
-          </h5>
-        </section>
-        <nav class="nav_footer">
-
-          <a href="/" class="nav_item nav_item--footer">Home</a>
-          <a href="/categoriass" class="nav_item nav_item--footer">Categorías</a>
-
-          <a href="/ofertas" class="nav_item nav_item--footer">Ofertas laborales</a>
-          <a href="#" class="nav_item nav_item--footer">Publicá una oferta</a>
-          <a href="/login" class="nav_item nav_item--footer">Inicia sesión</a>
-          <a href="/registrate" class="nav_item nav_item--footer">Regístrate</a>
-          <a href="https://www.instagram.com/agusteensat/" class="nav_item nav_item--footer">Contacto</a>
+		</nav>
+		<div class="container">
+			<section class="hero_container">
+				<div class="hero_texts">
+					<h1 class="hero_title">Encontrá laburo en minutos</h1>
+					<a href="/registrate" class="nav_item nav_item--cta">regístrate como empleado</a>
 
 
-          <span class="footer_icons">
-            <a class="fab fa-linkedin" href="#"></a>
-          </span>
-        </nav>
-      </div>
-    </footer>
+				</div>
+			</section>
+		</div>
+	</header>
 
-    <script
-      src="https://kit.fontawesome.com/fc0febdd06.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+	<main>
+		<section class="container category_grid">
+			<center>
+				<h1 class="subtitle category">
+
+					¿Necesitás que alguien haga lo que vos no sabes?
+				</h1>
+			</center>
+			<h3 class="category_description">
+				Revisá la categorías con las que te podemos ayudar
+			</h3>
+			<div class="botones">
+
+				<img class="trabajo" src="/img/Gasista.jpg" alt="Gasista" HSPACE="20" VSPACE="20" />
+				<a class="boton_txt" href="/categoriass#gasistas">Ver Gasistas ></a>
+			</div>
+			<div class="botones">
+
+				<img class="trabajo" src="/img/Plomero.jpg" alt="Plomero" HSPACE="20" VSPACE="20" />
+				<a class="boton_txt" href="/categoriass#plomeros">Ver Plomeros></a>
+
+			</div>
+			<div class="botones">
+
+				<img class="trabajo" src="/img/Jardinero.jpg" alt="Jardinero" HSPACE="20" VSPACE="20" />
+				<a class="boton_txt" href="/categoriass#jardineros">Ver Jardineros ></a>
+
+			</div>
+			<div class="botones">
+
+
+				<img class="trabajo" src="/img/Electricista.jpg" alt="Electricista" HSPACE="20" VSPACE="20" />
+				<a class="boton_txt" href="/categoriass#electricistas">Ver Electricistas ></a>
+
+			</div>
+
+		</section>
+		<div class="separar">
+			<center><a href="/categoriass" class="botonesimportantes"> Ver todas las categorías ></a></center>
+		</div>
+
+		<hr class="shine">
+
+
+		<section class="container how_to_do_it">
+			<div style="align-content: center;" class="how_text">
+				<h2 style="text-align: center;" class="subtitle how_to_do_it">¿Cómo funciona esto?</h2>
+				<div class="creaperfil">
+					<img class="imagencomo" src="/img/Icono1.svg" alt="Icono 1" />
+					<h4 class="como">Crea tu perfil</h4>
+					<p class="pasos">Completa tus datos personales sin moverte de casa.</p>
+				</div>
+
+				<div class="cargatarifa">
+					<img class="imagencomo" src="/img/Icono2.svg" alt="Icono 2" />
+					<h4 class="como">Cargá tu tarifario</h4>
+					<p class="pasos">Al crear un tarifario los empleadores podrán ver rápidamente tus
+						precios.</p>
+				</div>
+
+				<div class="aceptatrabaja">
+					<img class="imagencomo" src="/img/Icono3.svg" alt="Icono 3" />
+					<h4 class="como">Aceptá y trabajá</h4>
+					<p class="pasos">Vos elegís a que trabajos postular. Solo tenes que responder en
+						las ofertas publicadas.</p>
+				</div>
+
+			</div>
+		</section>
+
+
+		<hr class="shine">
+
+		<section class="container publication">
+			<div class="publish_text">
+				<h2 style="text-align: center;" class="subtitle publication">
+					¿Querés publicar una oferta en específico?
+				</h2>
+				<h3 class="publish_text">
+
+					Próximamente creá una oferta laboral y los empleados publicarán si están
+					disponibles para realizar ese trabajo.</h3>
+			</div>
+
+			<center><a href="#" class="boton_deshabilitado">Crear oferta</a></center>
+
+		</section>
+
+		<hr class="shine">
+
+		<section class="container testimony">
+			<div class="testimony_title">
+				<center>
+					<h2 class="subtitle testimony">Testimonios</h2>
+				</center>
+			</div>
+			<div class="testimony1">
+				<img style="align-self: center;" class="testimony__picture" src="/img/Fresia.png"
+					alt="Fresia Colucci" />
+				<h4 class="testimony_name">Fresia Colucci</h4>
+				<p class="testimony_text">
+					"He hecho el dinero para el verano, es una buena plataforma para
+					ofrecer mis servicios de paisajismo y jardinería."
+				</p>
+			</div>
+			<div class="testimony2">
+				<img class="testimony__picture" src="/img/Maria.png" alt="María De La Cerda" />
+				<h4 class="testimony_name">María De La Cerda</h4>
+				<p class="testimony_text">
+					"Anduve re bien con el plomero que contraté. Lo pedi de un día para
+					otro y no tuvimos ningún problema."
+				</p>
+			</div>
+			<div class="testimony3">
+				<img class="testimony__picture" src="/img/Lautaro.png" alt="Lautaro Alvarez" />
+				<h4 class="testimony_name">Lautaro Alvarez</h4>
+				<p class="testimony_text">
+					"Lo poco que llevo usando este servicio me ha resultado genial."
+				</p>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container footer_grid">
+			<section class="footer_title">
+				<h5 class="footer_txt" style="text-decoration:none;">
+					Copyright © 2021 AltoJobs - Todos los derechos reservados
+				</h5>
+			</section>
+			<nav class="nav_footer">
+
+				<a href="/" class="nav_item--footer">Home</a>
+				<a href="/categoriass" class="nav_item--footer">Categorías</a>
+				<a href="/login" class="nav_item--footer">Inicia sesión</a>
+				<a href="/registrate" class="nav_item--footer">Regístrate</a>
+
+				<span class="footer_icons">
+					<a class="fab fa-linkedin" href="#" style="color:#ffffff;
+	font-size:24px; vertical-align:middle;"></a>
+				</span>
+			</nav>
+		</div>
+	</footer>
+
+	<script src="https://kit.fontawesome.com/fc0febdd06.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
