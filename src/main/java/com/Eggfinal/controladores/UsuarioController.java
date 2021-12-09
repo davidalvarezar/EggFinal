@@ -23,9 +23,9 @@ public class UsuarioController {
 
 	@PostMapping("/registro")
 	public String guardarUsuario(@RequestParam String documento, @RequestParam String clave,
-			@RequestParam String nombre, @RequestParam String apellido, @RequestParam String email,
+			@RequestParam String nombre, @RequestParam String oficio, @RequestParam String email,
 			@RequestParam String telefono) throws ErrorServicio {
-		usuarioservicio.crearUsuario(documento, nombre, clave, apellido, email, telefono);
+		usuarioservicio.crearUsuario(documento, nombre, clave, oficio, email, telefono);
 		return "usuario/agregar.html";
 	}
 }

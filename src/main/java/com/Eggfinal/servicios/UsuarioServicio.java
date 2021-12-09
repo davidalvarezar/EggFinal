@@ -33,9 +33,9 @@ public class UsuarioServicio implements UserDetailsService {
 	private Usuario usuario;
 
 	public void crearUsuario(String nombre, String documento, String email, String telefono, String pass,
-			String apellido) throws ErrorServicio {
+			String oficio) throws ErrorServicio {
 
-		validacionDatos(documento, pass, nombre, apellido, email, telefono);
+		validacionDatos(documento, pass, nombre, oficio, email, telefono);
 
 		Usuario usuario = new Usuario();
 
@@ -43,7 +43,7 @@ public class UsuarioServicio implements UserDetailsService {
 		String encriptada = new BCryptPasswordEncoder().encode(pass);
 		usuario.setClave(encriptada);
 		usuario.setNombre(nombre);
-		usuario.setApellido(apellido);
+		usuario.setOficio(oficio);
 		usuario.setEmail(email);
 		usuario.setTelefono(telefono);
 
@@ -51,9 +51,9 @@ public class UsuarioServicio implements UserDetailsService {
 
 	}
 
-	public void modificarUsuario(String documento, String clave, String nombre, String apellido, String email,
+	public void modificarUsuario(String documento, String clave, String nombre, String oficio, String email,
 			String telefono) throws ErrorServicio {
-		validacionDatos(documento, clave, nombre, apellido, email, telefono);
+		validacionDatos(documento, clave, nombre, oficio, email, telefono);
 
 		Optional<Usuario> respuesta = usuarioRepositorio.findById(documento);
 		if (respuesta.isPresent()) {
@@ -62,9 +62,8 @@ public class UsuarioServicio implements UserDetailsService {
 			String encriptada = new BCryptPasswordEncoder().encode(clave);
 			usuario.setClave(encriptada);
 			usuario.setNombre(nombre);
-			usuario.setApellido(apellido);
+			usuario.setOficio(oficio);
 			usuario.setTelefono(telefono);
-			usuario.setEmail(email);
 
 			usuarioRepositorio.save(usuario);
 		} else {
@@ -73,10 +72,10 @@ public class UsuarioServicio implements UserDetailsService {
 
 	}
 
-	public void eliminarUsuario(String documento) throws ErrorServicio {
-		validacionDni(documento);
+	public void eliminarUsuario(String email) throws ErrorServicio {
+		validacionEmail(email);
 
-		Optional<Usuario> respuesta = usuarioRepositorio.findById(documento);
+		Optional<Usuario> respuesta = usuarioRepositorio.findById(email);
 		if (respuesta.isPresent()) {
 
 			Usuario usuario = respuesta.get();
@@ -89,7 +88,7 @@ public class UsuarioServicio implements UserDetailsService {
 
 	}
 
-	public void validacionDatos(String documento, String clave, String nombre, String apellido, String email,
+	public void validacionDatos(String documento, String clave, String nombre, String oficio, String email,
 			String telefono) throws ErrorServicio {
 		if (documento == null || documento.isEmpty()) {
 			throw new ErrorServicio("El documento del usuario no puede ser nulo ni vacío");
@@ -100,9 +99,9 @@ public class UsuarioServicio implements UserDetailsService {
 		if (nombre == null || nombre.isEmpty()) {
 			throw new ErrorServicio("El nombre del usuario no puede ser nulo ni vacío");
 		}
-//		if (apellido==null || apellido.isEmpty()) {
-//			throw new ErrorServicio("El apellido del usuario no puede ser nulo ni vacío");
-//		}
+		if (oficio==null || oficio.isEmpty()) {
+			throw new ErrorServicio("El oficio del usuario no puede ser nulo ni vacío");
+		}
 		if (email == null || email.isEmpty()) {
 			throw new ErrorServicio("El email del usuario no puede ser nulo ni vacío");
 		}
@@ -112,9 +111,9 @@ public class UsuarioServicio implements UserDetailsService {
 
 	}
 
-	public void validacionDni(String documento) throws ErrorServicio {
-		if (documento == null || documento.isEmpty()) {
-			throw new ErrorServicio("El documento del usuario no puede ser nulo ni vacío");
+	public void validacionEmail(String email) throws ErrorServicio {
+		if (email == null || email.isEmpty()) {
+			throw new ErrorServicio("El email del usuario no puede ser nulo ni vacío");
 		}
 
 	}
