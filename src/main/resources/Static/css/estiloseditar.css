@@ -94,7 +94,7 @@ img.logo{
 
 .contenedor_perfil{
     width: 100%;
-    padding: 40px;
+    padding: 0 40px 40px;
     
 }
 
@@ -115,6 +115,7 @@ img.logo{
     border-top: 1px dotted #D5E4F1;
 }
 
+
 .profile-info-name {
     text-align: right;
     padding: 6px 10px 6px 4px;
@@ -127,7 +128,9 @@ img.logo{
 
 .profile-info-value {
     padding: 6px 4px 6px 6px;
+  
 }
+ 
 
 .profile-info-value>span+span:before {
     display: inline;
@@ -148,6 +151,8 @@ img.logo{
     border-top: none
 }
 
+
+
 h1{
 	padding:40px 40px 0px 40px;
     text-align: left;
@@ -156,14 +161,6 @@ h1{
     line-height: 48px;
 }
 
-.txt_box{
-	background-color: rgb(219,218,255);
-	border:2px solid #372FFF;
-	border-radius:8px;
-	height:auto;
-	width:90%;
-	
-}
 
 
 p{
@@ -199,6 +196,26 @@ p{
     text-transform: uppercase;
 }
 
+.cancelar{
+    width: auto;
+    color: #372FFF;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin:0px 12px;
+    text-transform: uppercase;
+}
+
+
+.link{
+    text-decoration: none;
+	padding: 10px 5px;
+	font-weight: 500;
+	color: #372FFF;
+	font-size:16px;
+}
+
 .footer{
 	margin:20px 0;
 	background-color:#505050;
@@ -232,7 +249,3 @@ fa-linkedin::after{
 	color:#ffffff;
 	font-size:24px;
 }
-
-
-
-
