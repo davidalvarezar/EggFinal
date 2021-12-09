@@ -378,7 +378,7 @@ img.logo{
 
 .container-menu_categorias{
 	align-items: center;
-	width:60%;
+	width:65%;
 	margin: 80px auto;
 	height: 200px;
 	background-color:#ffffff;
@@ -512,7 +512,7 @@ h4.profesion{
 .empleados-container .empleados-wrapper .bottom .left .contact i{
 	font-size: 24px;
 	padding:30px;
-	color: var(--color-primary);
+	color: #372FFF;
 	transition:transform 0.5s;
 }
 

@@ -20,6 +20,7 @@
 				<a href="/" class="nav_item"><img class="logo" src="/img/Logo_Blanco.svg" alt="AltoJobs" /></a>
 				<a href="/" class="nav_item">Home</a>
 				<a href="/categoriass" class="nav_item nav_item--clicked">Categorías</a>
+				<a href="/login/perfil" class="nav_item" th:if="${session.usuariosession != null}">Mi Perfil</a>
 				<a href="/login" class="nav_item nav_item--cta" th:if="${session.usuariosession == null}">Iniciar
 					sesión</a>
 				<a href="/logout" class="nav_item nav_item--cta2" th:if="${session.usuariosession != null}">Salir</a>
@@ -31,28 +32,28 @@
 
 		<section class="container-menu_categorias">
 
-			<a href="#" class="item-menu-cat">
+			<a href="#electricistas" class="item-menu-cat">
 				<div class="item-menu-cat">
 					<img class="item-menu--cat" src="/img/elec_icono.svg" alt="Electricistas" />
 					<h4 class="profesion">Electricistas</h4>
 				</div>
 			</a>
 
-			<a href="#" class="item-menu-cat">
+			<a href="#plomeros" class="item-menu-cat">
 				<div class="item-menu-cat">
 					<img class="item-menu--cat" src="/img/plom_icono.svg" alt="Plomeros" />
 					<h4 class="profesion">Plomeros</h4>
 				</div>
 			</a>
 
-			<a href="#" class="item-menu-cat">
+			<a href="#jardineros" class="item-menu-cat">
 				<div class="item-menu-cat">
 					<img class="item-menu--cat" src="/img/jard_icono.svg" alt="Jardineros" />
 					<h4 class="profesion">Jardineros</h4>
 				</div>
 			</a>
 
-			<a href="#" class="item-menu-cat">
+			<a href="#gasistas" class="item-menu-cat">
 				<div class="item-menu-cat">
 					<img class="item-menu--cat" src="/img/gas_icono.svg" alt="Gasistas" />
 					<h4 class="profesion">Gasistas</h4>
@@ -63,6 +64,7 @@
 
 
 		<section class="container-carrusel">
+			<a name="electricistas" />
 			<h2 class="subtitle-carrusel">Electricistas</h2>
 			<div class="empleados-container">
 				<div class="empleados-wrapper">
@@ -75,8 +77,8 @@
 									<p class="parrafo_empleados">Me especializo en tareas básicas</p>
 								</div>
 								<div class="contact">
-
-									<i class="fas fa-address-book"></i>
+									<a href="#">
+										<i class="fas fa-address-book"></i>
 								</div>
 							</div>
 						</div>
@@ -93,8 +95,8 @@
 									<p class="parrafo_empleados">Soy crack para el voltaje</p>
 								</div>
 								<div class="contact">
-
-									<i class="fas fa-address-book"></i>
+									<a href="#">
+										<i class="fas fa-address-book"></i>
 								</div>
 							</div>
 						</div>
@@ -111,37 +113,20 @@
 									<p class="parrafo_empleados">Lo mio es la cocina</p>
 								</div>
 								<div class="contact">
-
-									<i class="fas fa-address-book"></i>
+									<a href="#">
+										<i class="fas fa-address-book"></i>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="empleados-wrapper">
-					<div class="empleados-card">
-						<img class="top" src="/img/LucianoZamponi.jpg" alt="Luciano Zamponi">
-						<div class="bottom">
-							<div class="left">
-								<div class="details">
-									<h2 class="txt_empleados">Luciano Zamponi</h2>
-									<p class="parrafo_empleados">Soy proveedor de articulos eléctricos</p>
-								</div>
-								<div class="contact">
-
-									<i class="fas fa-address-book"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
+			</div>
 			</div>
 		</section>
 
 		<section class="container-carrusel">
+			<a name="plomeros" />
 			<h2 class="subtitle-carrusel">Plomeros</h2>
 			<div class="empleados-container">
 				<div class="empleados-wrapper">
@@ -154,8 +139,8 @@
 									<p class="parrafo_empleados">Arrgelo desde hornos a calderas</p>
 								</div>
 								<div class="contact">
-
-									<i class="fas fa-address-book"></i>
+									<a href="#">
+										<i class="fas fa-address-book"></i>
 								</div>
 							</div>
 						</div>
@@ -172,8 +157,8 @@
 									<p class="parrafo_empleados">Que no digan que es cosa de hombres</p>
 								</div>
 								<div class="contact">
-
-									<i class="fas fa-address-book"></i>
+									<a href="#">
+										<i class="fas fa-address-book"></i>
 								</div>
 							</div>
 						</div>
@@ -190,35 +175,21 @@
 									<p class="parrafo_empleados">12 años de experiencia</p>
 								</div>
 								<div class="contact">
-
-									<i class="fas fa-address-book"></i>
+									<a href="#">
+										<i class="fas fa-address-book"></i>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="empleados-wrapper">
-					<div class="empleados-card">
-						<img class="top" src="/img/FernandoFernandez.jpg" alt="Fernando Fernandez">
-						<div class="bottom">
-							<div class="left">
-								<div class="details">
-									<h2 class="txt_empleados">Fernando Fernandez</h2>
-									<p class="parrafo_empleados">En búsqueda de algo estable</p>
-								</div>
-								<div class="contact">
 
-									<i class="fas fa-address-book"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			</div>
 			</div>
 		</section>
 
 		<section class="container-carrusel">
+			<a name="jardineros" />
 			<h2 class="subtitle-carrusel">Jardineros</h2>
 			<div class="empleados-container">
 				<div class="empleados-wrapper">
@@ -231,8 +202,8 @@
 									<p class="parrafo_empleados">Mi pasión es el paisajismo</p>
 								</div>
 								<div class="contact">
-
-									<i class="fas fa-address-book"></i>
+									<a href="#">
+										<i class="fas fa-address-book"></i>
 								</div>
 							</div>
 						</div>
@@ -249,8 +220,8 @@
 									<p class="parrafo_empleados">He trabajado para los famosos</p>
 								</div>
 								<div class="contact">
-
-									<i class="fas fa-address-book"></i>
+									<a href="#">
+										<i class="fas fa-address-book"></i>
 								</div>
 							</div>
 						</div>
@@ -267,35 +238,20 @@
 									<p class="parrafo_empleados">La jardinería es mi hobby</p>
 								</div>
 								<div class="contact">
-
-									<i class="fas fa-address-book"></i>
+									<a href="#">
+										<i class="fas fa-address-book"></i>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="empleados-wrapper">
-					<div class="empleados-card">
-						<img class="top" src="/img/AnaSuaréz.jpg" alt="Ana Suaréz">
-						<div class="bottom">
-							<div class="left">
-								<div class="details">
-									<h2 class="txt_empleados">Ana Suaréz</h2>
-									<p class="parrafo_empleados">Trabajo la jardinería sustentable</p>
-								</div>
-								<div class="contact">
-
-									<i class="fas fa-address-book"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			</div>
 			</div>
 		</section>
 
 		<section class="container-carrusel">
+			<a name="gasistas" />
 			<h2 class="subtitle-carrusel">Gasistas</h2>
 			<div class="empleados-container">
 				<div class="empleados-wrapper">
@@ -308,8 +264,8 @@
 									<p class="parrafo_empleados">Soy plomero 100%</p>
 								</div>
 								<div class="contact">
-
-									<i class="fas fa-address-book"></i>
+									<a href="#">
+										<i class="fas fa-address-book"></i>
 								</div>
 							</div>
 						</div>
@@ -326,8 +282,8 @@
 									<p class="parrafo_empleados">Que no digan que es cosa de hombres</p>
 								</div>
 								<div class="contact">
-
-									<i class="fas fa-address-book"></i>
+									<a href="#">
+										<i class="fas fa-address-book"></i>
 								</div>
 							</div>
 						</div>
@@ -344,8 +300,8 @@
 									<p class="parrafo_empleados">Altaplomería Mendozina</p>
 								</div>
 								<div class="contact">
-
-									<i class="fas fa-address-book"></i>
+									<a href="#">
+										<i class="fas fa-address-book"></i>
 								</div>
 							</div>
 						</div>
@@ -356,30 +312,28 @@
 		</section>
 
 	</main>
-
-
 	<footer class="footer">
-		<div class="container footer_grid">
-			<section class="footer_title">
-				<h5 class="footer_text">
-					Copyright © 2021 AltoJobs - Todos los derechos reservados
-				</h5>
-			</section>
-			<nav class="nav_footer">
-				<a href="/" class="nav_item nav_item--footer">Home</a>
-				<a href="/categoriass" class="nav_item nav_item--footer">Categorías</a>
-				<a href="#" class="nav_item nav_item--footer">Contacto</a>
-				<span class="footer_icons">
-					<a class="fab fa-linkedin" href="#"></a>
-				</span>
-			</nav>
-		</div>
-	</footer>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://kit.fontawesome.com/fc0febdd06.js" crossorigin="anonymous"></script>
-</body>
+      <div class="container footer_grid">
+        <section class="footer_title">
+          <h5 class="footer_txt" style="text-decoration:none;">
+            Copyright © 2021 AltoJobs - Todos los derechos reservados
+          </h5>
+        </section>
+        <nav class="nav_footer">
+          <a href="/" class="nav_item--footer">Home</a>
+          <a href="/categoriass" class="nav_item--footer">Categorías</a>
+          <a href="/login" class="nav_item--footer">Inicia sesión</a>
+          <a href="/registrate" class="nav_item--footer">Regístrate</a>
+          <span class="footer_icons">
+            <a class="fab fa-linkedin" href="#" style="color:#ffffff;
+	font-size:24px; vertical-align:middle;"></a>
+          </span>
+        </nav>
+      </div>
+    </footer>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/fc0febdd06.js" crossorigin="anonymous"></script>
+  </body>
 
 </html>
