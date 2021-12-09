@@ -19,7 +19,7 @@
           <a href="/" class="nav_item">Home</a>
         	<a href="/categoriass" class="nav_item">Categorías</a>
            <a href="/login" class="nav_item nav_item--cta" th:if="${session.usuariosession == null}">Iniciar sesión</a>
-        <a href="/logout" class="nav_item nav_item--cta2" th:if="${session.usuariosession != null}">Salir</a>
+        <a href="/logout" class="nav_item nav_item--cta2" th:if="${session.usuariosession != null}" style="color: #FA4B6A">Salir</a>
         </nav>
       </div>
     </header>
@@ -34,7 +34,6 @@
          <a href="/editarperfil" style="text-decoration: none;">
            <p>Termina de editar tu perfil para poder postular a las diferentes ofertas laborales</p>
             </a>
-           <i class="fas fa-x icon"></i>
           </div>
           
       <div class="profile-user-info">
@@ -46,7 +45,7 @@
 			</div>
 		</div>
 		
-		<div class="hr hr-8 dotted"></div>
+		<div class="hr hr-8 dotted" style="width:68%;"></div>
 		<div class="profile-info-row">
 			<div class="profile-info-name">DNI</div>
 
@@ -54,9 +53,8 @@
 			<span>Dni</span>
 			</div>
 		</div>
-		<div class="hr hr-8 dotted"></div>
 		
-		<div class="hr hr-8 dotted"></div>
+		<div class="hr hr-8 dotted" style="width:68%;"></div>
 		<div class="profile-info-row">
 			<div class="profile-info-name">Oficio</div>
 
@@ -64,19 +62,8 @@
 			<span>Oficio</span>
 			</div>
 		</div>
-		<div class="hr hr-8 dotted"></div>
 		
-		<div class="hr hr-8 dotted"></div>
-		<div class="profile-info-row">
-			<div class="profile-info-name">Correo Electrónico</div>
-
-			<div class="profile-info-value">
-			<span>Correo Electrónico</span>
-			</div>
-		</div>
-		<div class="hr hr-8 dotted"></div>
-		
-		<div class="hr hr-8 dotted"></div>
+		<div class="hr hr-8 dotted" style="width:68%;"></div>
 		<div class="profile-info-row">
 			<div class="profile-info-name">Teléfono</div>
 
@@ -84,9 +71,8 @@
 			<span>Teléfono</span>
 			</div>
 		</div>
-		<div class="hr hr-8 dotted"></div>
 		
-		<div class="hr hr-8 dotted"></div>
+		<div class="hr hr-8 dotted" style="width:68%;"></div>
 		<div class="profile-info-row">
 			<div class="profile-info-name">Contraseña</div>
 
@@ -94,7 +80,7 @@
 			<span>Contraseña</span>
 			</div>
 		</div>
-		<div class="hr hr-8 dotted"></div>
+		<div class="hr hr-8 dotted" style="width:68%;"></div>
 		
 	</div>
 		
@@ -102,15 +88,9 @@
 
         
         <center>
-        <input type="submit" value="Iniciar sesión" class="button"/></center>
-       
-        
-        <hr class="divisor">
-        
-        <p>
-          ¿No tienes una cuenta?
-          <a class="link" href="registrate">Regístrate </a>
-        </p>
+        <a href="/editarperfil" style="text-decoration: none;">
+        <input type="submit" value="Editar mi perfil" class="button"/></center>
+        </a>
       </div>
     </div>
 </center>
