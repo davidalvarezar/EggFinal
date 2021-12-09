@@ -17,7 +17,6 @@
 		<nav class="nav">
 			<a href="/" class="nav_item"><img class="logo" src="/img/Logo_Blanco.svg" alt="AltoJobs" /></a>
 			<a href="/" class="nav_item">Home</a>
-			<a href="/login/perfil" class="nav_item" th:if="${session.usuariosession != null}">Mi perfil</a>
 			<a href="/categoriass" class="nav_item">Categorías</a>
 			<a href="/login/perfil" class="nav_item" th:if="${session.usuariosession != null}">Mi Perfil</a>
 			<a href="/login" class="nav_item nav_item--cta" th:if="${session.usuariosession == null}">Iniciar sesión</a>
@@ -29,7 +28,7 @@
 			<section class="hero_container">
 				<div class="hero_texts">
 					<h1 class="hero_title">Encontrá laburo en minutos</h1>
-					<a href="/registrate" class="nav_item nav_item--cta">regístrate como empleado</a>
+					<a href="/registrate" class="nav_item nav_item--cta"th:if="${session.usuariosession == null}">regístrate como empleado</a>
 
 
 				</div>
