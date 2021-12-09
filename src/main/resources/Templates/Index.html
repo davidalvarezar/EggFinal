@@ -15,10 +15,11 @@
 	<header class="hero">
 
 		<nav class="nav">
-			<a href="/" class="nav_item"><img class="logo" src="/img/Logo.svg" alt="AltoJobs" /></a>
+			<a href="/" class="nav_item"><img class="logo" src="/img/Logo_Blanco.svg" alt="AltoJobs" /></a>
 			<a href="/" class="nav_item">Home</a>
 			<a href="/login/perfil" class="nav_item" th:if="${session.usuariosession != null}">Mi perfil</a>
 			<a href="/categoriass" class="nav_item">Categorías</a>
+			<a href="/login/perfil" class="nav_item" th:if="${session.usuariosession != null}">Mi Perfil</a>
 			<a href="/login" class="nav_item nav_item--cta" th:if="${session.usuariosession == null}">Iniciar sesión</a>
 			<a href="/logout" class="nav_item nav_item--cta2" th:if="${session.usuariosession != null}">Salir</a>
 
@@ -74,7 +75,7 @@
 
 		</section>
 		<div class="separar">
-			<center><a href="/categoriass" class="botonesimportantes"> Ver todas las categorías ></a></center>
+			<center><a href="/categoriass" class="boton_principal"> Ver todas las categorías ></a></center>
 		</div>
 
 		<hr class="shine">

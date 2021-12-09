@@ -17,7 +17,7 @@ public class Usuario {
 	private String documento;
 	private String clave;
 	private String nombre;
-	private String apellido;
+	private String oficio;
 	private String email;
 	private String telefono;
 	public String getDocumento() {
@@ -38,11 +38,11 @@ public class Usuario {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public String getApellido() {
-		return apellido;
+	public String getOficio() {
+		return oficio;
 	}
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
+	public void setOficio(String oficio) {
+		this.oficio = oficio;
 	}
 	public String getEmail() {
 		return email;

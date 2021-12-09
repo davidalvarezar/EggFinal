@@ -10,6 +10,10 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+.nav_item--clicked{
+	color: #372FFF;	
+}
+
 
 * {
     box-sizing: border-box;
