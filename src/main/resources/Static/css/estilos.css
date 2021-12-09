@@ -163,11 +163,13 @@ div.botones{
 	background-color: var(--color-secondary);
 	border: 2px solid #FA4B6A;
 	border-radius: 50px;
+	text-transform: uppercase;
 }
 
 .boton_principal:hover{
     color: var(--color-secondary);
     background-color: #ffffff;
+    text-transform: uppercase;
   }
   
 .boton_deshabilitado{
@@ -179,6 +181,7 @@ div.botones{
 	background-color: #bdbdbd;
 	border: 2px solid #bdbdbd;
 	border-radius: 50px;
+	text-transform: uppercase;
 }
 
 a.category_cta{
@@ -196,11 +199,13 @@ hr.divisor{
 .how_to_do_it{
 	padding-bottom: 40px;
 	text-align: center;
+
 	
 }
 
 div.how_txt{
 	text-align: center;
+	
 	
 }
 
