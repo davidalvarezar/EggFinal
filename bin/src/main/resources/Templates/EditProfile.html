@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AltoJobs</title>
+	<link rel="stylesheet" href="/css/estiloseditar.css" />
+</head>
+
+<body>
+
+	<body>
+		<header class="hero_profile">
+			<div class="container">
+				<nav class="nav">
+
+					<a href="/" class="nav_item nav_item--logo"><img class="logo" src="/img/Logo.svg"
+							alt="AltoJobs" /></a>
+					<a href="/" class="nav_item">Home</a>
+					<a href="/categoriass" class="nav_item">Categorías</a>
+					<a href="/login" class="nav_item nav_item--cta" th:if="${session.usuariosession == null}">Iniciar sesión</a>
+					<a href="/logout" class="nav_item nav_item--cta2" th:if="${session.usuariosession != null}"
+						style="color: #FA4B6A">Salir</a>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<center>
+				<div class="contenedor">
+					<h1>Editar perfil</h1>
+
+					<div class="contenedor_perfil">
+
+						<div class="profile-user-info">
+							<div class="profile-info-row">
+								<div class="profile-info-name">Nombre Completo</div>
+
+								<div class="profile-info-value">
+									<input class="form-control" type="text" value="">
+								</div>
+							</div>
+
+							<div class="hr hr-8 dotted" style="width:68%;"></div>
+							<div class="profile-info-row">
+								<div class="profile-info-name">DNI</div>
+
+								<div class="profile-info-value">
+									<input class="form-control" type="text" value="">
+								</div>
+							</div>
+
+							<div class="hr hr-8 dotted" style="width:68%;"></div>
+							<div class="profile-info-row">
+								<div class="profile-info-name">Oficio</div>
+
+								<div class="profile-info-value">
+									<input class="form-control" type="text" value="">
+								</div>
+							</div>
+
+							<div class="hr hr-8 dotted" style="width:68%;"></div>
+							<div class="profile-info-row">
+								<div class="profile-info-name">Teléfono</div>
+
+								<div class="profile-info-value">
+									<input class="form-control" type="text" value="">
+								</div>
+							</div>
+
+							<div class="hr hr-8 dotted" style="width:68%;"></div>
+							<div class="profile-info-row">
+								<div class="profile-info-name">Contraseña</div>
+
+								<div class="profile-info-value">
+									<input class="form-control" type="password" value="">
+								</div>
+							</div>
+
+							<div class="hr hr-8 dotted" style="width:68%;"></div>
+							<div class="profile-info-row">
+								<div class="profile-info-name">Sobre mi...</div>
+
+								<div class="profile-info-value">
+									<textarea class="textarea" rows="5" placeholder="Sobre mi..."></textarea>
+								</div>
+							</div>
+
+
+						</div>
+
+
+
+
+						<center>
+							<a href="/" style="text-decoration: none;">
+								<input type="submit" value="Guardar cambios" class="button" /></a>
+							<p></p>
+							<a href="/" style="text-decoration: none;">
+								<input type="reset" class="cancelar" value="Cancelar" />
+						</center>
+
+					</div>
+				</div>
+			</center>
+			</section>
+
+		</main>
+
+
+		<footer class="footer">
+			<div class="container footer_grid">
+				<section class="footer_title">
+					<h5 class="footer_txt" style="text-decoration:none;">
+						Copyright © 2021 AltoJobs - Todos los derechos reservados
+					</h5>
+				</section>
+				<nav class="nav_footer">
+					<a href="/" class="nav_item--footer">Home</a>
+					<a href="/categoriass" class="nav_item--footer">Categorías</a>
+					<a href="/login" class="nav_item--footer">Inicia sesión</a>
+					<a href="/registrate" class="nav_item--footer">Regístrate</a>
+					<span class="footer_icons">
+						<a class="fab fa-linkedin" href="#" style="color:#ffffff;
+	font-size:24px; vertical-align:middle;"></a>
+					</span>
+				</nav>
+			</div>
+		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://kit.fontawesome.com/fc0febdd06.js" crossorigin="anonymous"></script>
+
+	</body>
+
+</html>

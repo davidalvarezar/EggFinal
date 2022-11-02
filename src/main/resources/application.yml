@@ -23,4 +23,4 @@ server:
         http-only: true
       tracking-modes:
       - cookie
-  port: 8082
+  port: 8080

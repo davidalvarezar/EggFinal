@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+	<meta charset="UTF-8"/>
+	<title>AltoJobs</title>
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+	<link rel="stylesheet" href="css/estilosregistro.css" />
+	<link rel="stylesheet" href="/css/normalize.css" />
+</head>
+
+<body>
+		<form action="/registrar" method="POST" class="formulario">
+			<h1>Regístrate</h1>
+		<div class="contenedor">
+			<div class="input-contenedor">
+				<i class="fas fa-user icon"></i>
+				<input type="text" name="nombre" placeholder="Nombre Completo" />
+			</div>
+
+			<div class="input-contenedor">
+			<i class="fas fa-id-badge icon"></i>		
+			<input type="text" name="Documento" placeholder="DNI" />
+			</div>
+			
+			<div class="input-contenedor">
+				<i class="fas fa-briefcase icon"></i>
+				<input type="text" name="oficio" placeholder="Oficio" />
+			</div>
+
+			<div class="input-contenedor">
+				<i class="fas fa-envelope icon"></i>
+				<input type="text" name="correo" placeholder="Correo Electrónico" />
+			</div>
+
+			<div class="input-contenedor">
+				<i class="fas fa-mobile icon"></i>
+				<input type="text" name="telefono" placeholder="Teléfono" />
+			</div>
+
+			<div class="input-contenedor">
+				<i class="fas fa-key icon"></i>
+				<input type="password" name="Contraseña" placeholder="Contraseña" />
+			</div>
+			<center>
+			<input type="submit"  value="Regístrate"  class="button" /></center>
+			<p>
+				Al registrarte, aceptas nuestras Condiciones de uso y Políticas de
+				privacidad.
+			</p>
+			
+			<hr class="divisor">
+			
+			<p>
+				¿Ya tienes una cuenta? <a class="link" href="login">Iniciar Sesion</a>
+			</p>
+		</div>
+	</form>
+	
+</body>
+
+</html>

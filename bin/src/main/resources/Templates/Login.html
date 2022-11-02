@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AltoJobs</title>
+    <meta name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
+    <link rel="stylesheet" href="css/estiloslogin.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+  </head>
+  
+  
+  <body>
+   <form action="/logincheck" method="POST" class="formulario">
+      <p th:if="${error != null}" th:text="${error}" style="color:red"></p>
+      <p th:if="${logout != null}" th:text="${logout}" style="color:greenyellow"></p>
+
+      <h1>Login</h1>
+      <div class="contenedor">
+        <div class="input-contenedor">
+          <i class="fas fa-envelope icon"></i>
+          <input type="text" placeholder="Correo Electrónico" name=Username />
+        </div>
+
+        <div class="input-contenedor">
+          <i class="fas fa-key icon"></i>
+          <input type="password" placeholder="Contraseña" name=Password />
+        </div>
+        <center>
+        <input type="submit" value="Iniciar sesión" class="button" /></center>
+        <p>
+          Al registrarte, aceptas nuestras Condiciones de uso y Políticas de
+          privacidad.
+        </p>
+        
+        <hr class="divisor">
+        
+        <p>
+          ¿No tienes una cuenta?
+          <a class="link" href="registrate">Regístrate </a>
+        </p>
+      </div>
+    </form>
+  </body>
+</html>
